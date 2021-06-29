@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'homepage.apps.HomepageConfig',
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,9 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, "templates"),
+            os.path.join(BASE_DIR, "formulario/templates"),
+            os.path.join(BASE_DIR, "enfermedades/templates"),
+            os.path.join(BASE_DIR, "homepage/templates"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

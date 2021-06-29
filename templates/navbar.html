@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block content %}
+    <div class="boxHeader">
+        <header>
+        <div class="navbar">
+            <ul class="ul-navbar">
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'depresion' %}">Enfermedades</a></li>
+                <li><a href="#">Contacto Profesional</a></li>
+            </ul>
+        </div>
+        <div class="test">
+            <a href="{% url 'formulario'%}">Llena nuestro test</a>
+        </div>
+        <div class="burger">
+            <div class="burger-box">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        </header>
+    </div> 
+{% endblock %}    

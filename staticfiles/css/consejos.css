@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Rosario:wght@400;700&display=swap');
+
+
+h1,h2{
+    color: #3BAFBF;
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+    font-size: 2.8rem;
+}
+.contenido{
+    position: relative;
+    top:60px;
+}
+.title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.title img{
+    object-fit: contain;
+    margin-right: 20px;
+}
+/*Inico de la tarjeta de consejos*/
+.boxConsejo{
+    display: flex;
+    padding:50px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boxConsejo:nth-child(2n){
+    background-color:#C4C4C4 ;
+}
+.boxConsejo:nth-child(3n){
+    flex-direction: row-reverse;
+}
+.boxText{
+    width: 60%;
+}
+
+.boxText p{
+    line-height: 30px;
+    width: 60%;
+    font-family: 'Rosario', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boxImg{
+    width:40%;
+	max-width:960px;
+	min-width:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.boxImg img{
+    max-width:100%;
+	height:auto;
+}
+@media screen and (max-width:875px){
+    .boxText{
+        width: 100%;
+    }
+    .boxConsejo{
+        padding:30px;
+    }
+    .boxText p{
+        width: 80%;
+        text-align: center;
+    }
+}
