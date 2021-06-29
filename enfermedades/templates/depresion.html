@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,55 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
-    <div class="boxHeader">
-        <header>
-            <div class="navbar">
-                <ul class="ul-navbar">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Enfermedades</a></li>
-                    <li><a href="#">Contacto Profesional</a></li>
-                </ul>
-            </div>
-            <div class="test">
-                <a href="formulario.html">LLena nuestro test</a>
-            </div>
-            <div class="burger">
-                <div class="burger-box">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </div>
-        </header>
-    </div>
-
-    <section class="bloque-carrusel">
-        <div class="images glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <a href="depresion.html"><img src="img/carrusel-nombres/ansiedad.png" alt=""></a>
-                    </li>
-
-                    <li class="glide__slide">
-                        <a href="depresion.html"><img src="img/carrusel-nombres/psicosis.png" alt=""></a>
-                    </li>
-
-                    <li class="glide__slide">
-                        <a href="depresion.html"><img src="img/carrusel-nombres/violencia.png" alt=""></a>
-                    </li>
-
-                    <li class="glide__slide">
-                        <a href="depresion.html"><img src="img/carrusel-nombres/depresion.png" alt=""></a>
-                    </li>
-
-                    <li class="glide__slide">
-                        <a href="depresion.html"><img src="img/carrusel-nombres/alcoholismo.png" alt=""></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    {% include 'navbar.html'%}
+    {% include 'carrusel_enfermedades.html'%}
 
     <section class="enfermedad">
         <h2>Trastorno Depresivo</h2>
