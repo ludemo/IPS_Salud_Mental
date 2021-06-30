@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Rosario:wght@400;700&display=swap');
+.contenido{
+  position: relative;
+  top:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1,h2{
+  color: #3BAFBF;
+  font-family: 'ABeeZee', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+.contenido >p{
+  font-family: 'Rosario', sans-serif;
+  max-width: 800px;
+  margin: 0 40px;
+  text-align: center;
+}
+.tarjetaTest{
+  background-color: #F2FDFF;
+  max-width: 800px;
+  border-radius: 10px;
+  padding:20px;
+  font-family: 'Rosario', sans-serif;
+  margin:50px auto;
+  padding:40px ;
+}
+.tarjetaTest p{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.tarjetaTest p span{
+  font-size: 1.7rem;
+}
+.tarjetaTest .opciones{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:30px ;
+  flex-wrap: wrap;
+}
+.tarjetaTest  .opcion{
+  min-width: 90px;
+}
+.tarjetaTest label{
+  margin-left: 5px;
+}
+
+.buttom{
+  border: none;  
+  background-color: #3BAFBF;
+  padding:5px 20px;
+  font-family: 'Rosario', sans-serif;
+  color: #ffff;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  width: 100px;
+  margin-bottom: 50px;
+}
+.buttom:hover{
+  background-color: #26747e;
+}
+@media screen and (max-width:600px){
+  .tarjetaTest .opciones{
+    flex-direction: column;
+  }
+  .tarjetaTest .opcion{
+    margin:10px auto;
+  }
+}

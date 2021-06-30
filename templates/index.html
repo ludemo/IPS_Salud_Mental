@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+	<link rel="Stylesheet" href="{% static 'css/enfermedades.css' %}">
+    <title>Maquetado</title>
+
+    <!--GLIDE.JS-->
+    <script src="{% static 'js/glide.min.js' %}" charset="utf-8"></script>
+    <link rel="stylesheet" href="{% static 'css/glide.core.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/glide.theme.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--GLIDER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+	{% block content %}
+	{% endblock %}
+</body>
+</html>

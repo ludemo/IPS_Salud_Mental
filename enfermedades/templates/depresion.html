@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="styles/enfermedades.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>Depresión</title>
+    <!--GLIDE.JS-->
+    <script src="js/glide.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/glide.core.min.css">
+    <link rel="stylesheet" href="styles/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    {% include 'navbar.html'%}
+    {% include 'carrusel_enfermedades.html'%}
+
+    <section class="enfermedad">
+        <h2>Trastorno Depresivo</h2>
+        <div class="descripcion">
+            <p>Tipo de abuso que se presenta cuando uno de los integrantes de la familia incurre,
+                de manera deliberada, en maltratos a nivel físico o emocional hacia otro.</p>
+	    <img src="{% static 'img/carrusel/1-depresión.png' %}">
+        </div>
+        <h2>Estrategias</h2>
+        <div class="estrategias">
+		<img src="{% static 'img/cerebro.png' %}">
+            <ul>
+                <li>Toma medidas para controlar el estrés, mejorar tu resiliencia y levantar tu autoestima.</li><br>
+                <li>Acércate a la familia y a los amigos, especialmente en momentos de crisis, para que te ayuden a superar los malos tiempos.</li><br>
+                <li>Consigue tratamiento ante el primer signo de un problema para que te ayude a impedir que la depresión empeore.</li><br>
+                <li>Considera tener tratamiento de apoyo de larga duración para que te ayude a prevenir la reaparición de los síntomas</li><br>
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <!--GLIDE-->
+    <script src="js/script3.js"></script>
+</body>
+</html>
