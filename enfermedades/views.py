@@ -7,3 +7,9 @@ def consejos(request, *args, **kwargs):
     return render(request, "consejos.html", {})
 def depresion(request, *args, **kwargs):
     return render(request, "depresion.html", {})
+def alcoholismo(request, *args, **kwargs):
+    return render(request, "alcoholismo.html", {})
+def ansiedad(request, *args, **kwargs):
+    return render(request, "ansiedad.html", {})
+def psicosis(request, *args, **kwargs):
+    return render(request, "psicosis.html", {})
