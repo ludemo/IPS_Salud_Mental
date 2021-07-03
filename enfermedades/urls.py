@@ -11,4 +11,5 @@ urlpatterns = [
     path('alcoholismo', views.alcoholismo, name = 'alcoholismo'),
     path('psicosis', views.psicosis, name = 'psicosis'),
     path('ansiedad', views.ansiedad, name = 'ansiedad'),
+    path('violenciafamiliar', views.violencia_familiar, name = 'violenciafamiliar'),
 ]

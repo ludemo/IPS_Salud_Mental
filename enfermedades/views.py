@@ -13,3 +13,5 @@ def ansiedad(request, *args, **kwargs):
     return render(request, "ansiedad.html", {})
 def psicosis(request, *args, **kwargs):
     return render(request, "psicosis.html", {})
+def violencia_familiar(request, *args, **kwargs):
+    return render(request, "violencia_familiar.html", {})
