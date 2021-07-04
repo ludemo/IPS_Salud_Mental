@@ -3,6 +3,9 @@
 
 /*Inicio del header*/
 /*Inicio del bloque 1*/
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x:hidden;
 }
