@@ -65,6 +65,53 @@ h1,h2{
 .buttom:hover{
   background-color: #26747e;
 }
+
+/*parte final del resultado*/
+ .respuesta{
+  max-width:920px;
+  font-family: 'Rosario', sans-serif;
+  margin:40px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+ }
+ .respuesta{
+   font-size:.5rem;
+ }
+ .box-resultado{
+  display :flex;
+  flex-wrap: wrap;
+ }
+ .veces{
+    font-size:2rem;
+    text-align: center;
+    max-width: 400px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:20px;
+ }
+ .veces span{
+   color:#3BAFBF ;
+   font-size:5rem;
+ }
+ .texto-resp{
+  max-width:500px;
+  font-size:1.3rem;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:centeR;
+  padding:20px;
+ }
+ .avalado{
+   background-color:rgb(249, 243, 219);
+   padding:20px;
+   font-size:1rem;
+   text-align: center;
+ }
 @media screen and (max-width:600px){
   .tarjetaTest .opciones{
     flex-direction: column;
