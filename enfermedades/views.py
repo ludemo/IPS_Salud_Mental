@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import render
 
 # Create your views here.
-
+#Views basadas en función para renderizar los transtornos de salud mental
 def consejos(request, *args, **kwargs):
     return render(request, "consejos.html", {})
 def depresion(request, *args, **kwargs):
