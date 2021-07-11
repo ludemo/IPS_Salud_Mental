@@ -13,6 +13,16 @@ class Enfermedad(models.Model):
 	class Meta:
 		verbose_name_plural = "Enfermedades"
 
+class PersonalM(models.Model):
+
+	nombreP = models.CharField(max_length=200)
+	imagenP = models.ImageField(upload_to='img/doctores')
+	centroP = models.CharField(max_length=200)
+	celularP = models.IntegerField()
+	
+	class Meta:
+		verbose_name_plural = "Personales"
+
 class Consejos(models.Model):
     #Titulo del consejo
     conTit = models.CharField(max_length=40)
@@ -20,3 +30,6 @@ class Consejos(models.Model):
     conDes = models.TextField()
     #Url de la imagen
     conImaUrl = models.TextField()
+
+    class Meta:
+		verbose_name_plural = "Consejos"
