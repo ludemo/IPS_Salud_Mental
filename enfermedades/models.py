@@ -19,7 +19,7 @@ class PersonalM(models.Model):
 	imagenP = models.ImageField(upload_to='img/doctores')
 	centroP = models.CharField(max_length=200)
 	celularP = models.IntegerField()
-	
+
 	class Meta:
 		verbose_name_plural = "Personales"
 
@@ -32,4 +32,4 @@ class Consejos(models.Model):
     conImaUrl = models.TextField()
 
     class Meta:
-		verbose_name_plural = "Consejos"
+    	verbose_name_plural = "Consejos"
