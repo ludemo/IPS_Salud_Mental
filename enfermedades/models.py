@@ -21,7 +21,7 @@ class PersonalM(models.Model):
 	celularP = models.IntegerField()
 
 	class Meta:
-		verbose_name_plural = "Personales"
+		verbose_name_plural = "Personal Medico"
 
 class Consejos(models.Model):
     #Titulo del consejo
