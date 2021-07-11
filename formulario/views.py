@@ -3,10 +3,11 @@ from .models import Formulario
 from .form import Formulario 
 
 # Create your views here.  
-
+#View basada en función para renderizar formulario html (Inactiva)
 def formulario(request, *args, **kwargs):
     return render(request, "formulario.html", {})
 
+#View basada en función para validar a una llamada del form (Inactiva)
 def enviarForm(request, myID):
 	obj = Formulario.objects.get(id = myID)
 	form = Formulario(request.POST or None, instance = obj)
@@ -21,7 +22,7 @@ def enviarForm(request, myID):
 	}
 	return render(request, "formulario.html", context)
 
-
+#View basada en función para responder a una llamada del form  y redigir (Inactiva)
 def enviar(request, pk):
 	if request.method == "POST":
 		form = Formulario(request.POST)

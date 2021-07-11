@@ -22,13 +22,16 @@ navSlide();
 
 //Formulario
 
-
+//Función que se llama con el submit del formulario
 function formulario() {
     var p1b1 =document.getElementById("p1b1");
     var p1b2 =document.getElementById("p1b2");
     console.log(p1b1.checked)
-    var contSi = 0;
-    var contNO = 0;
+    var contSi = 0; //Contador de Sí
+    var contNO = 0; //Contador de No
+
+
+    //Revisa cada respuesta para generar los resultados pertinentes
     //pregunta 1
     if(p1b1.checked){contSi++;}
         else if(p1b2.checked){contNO++;}
@@ -87,14 +90,14 @@ function formulario() {
     if(p19b1.checked){contSi++;}
         else if(p19b2.checked){contNO++;}
 
-    //contador final
+    //contador final, Muestra la respuesta obtenida de la revisión
     var text = document.getElementById("cantidadVeces");
     text.innerHTML = contSi;
     console.log("Se presionaron "+contSi+ " si" );
     console.log("Se presionaron "+contNO+ " no" );
     //msotrar respuesta
     var respuesta= document.getElementById("respuesta");
-    respuesta.style.display="block";
+    respuesta.style.display="block";//Modifica el bloque de html para mostrar
     var formulario = document.getElementById("formulario");
-    formulario.style.display="none";
+    formulario.style.display="none";//Modifica el bloque html para no mostrar
 }
