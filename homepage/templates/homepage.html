@@ -1,16 +1,126 @@
-<!DOCTYPE html>
-<!-- Seccion de html que incluye todo el codigo referente a la homepage-->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- Incluye toda la seccion de codigo del navbar -->
-    {% include 'navbar.html'%}
-    <!-- Incluye toda la seccion de codigo de codigo del body de la homepage -->
-    {% include 'body.html'%}
-</body>
-</html>
+{% extends 'index.html' %}
+{% load static %} 
+{% block content %} 
+    <section class="bloque1">
+        <div class="contenedor">
+            <div class="contenedorText">
+                <div class="textSalud">
+                    <h1>Informate sobre la Salud mental</h1>
+                    <p>Te presentamos toda la información, contactos profesionales y patrones de las enfermedades mentales...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bloque2">
+        <div class="contenedor">
+            <div class ="olaTop" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.41,145.55 C133.46,12.33 337.18,219.56 500.27,87.33 L500.00,150.00 L-1.41,152.45 Z" style="stroke: none; fill: #ffff;"></path></svg></div>
+            <div class="imagen-consejos">
+                <img class="informateDesktop" src="{% static 'img/imagen-informate.png' %}" alt="informate">
+                <img class="informateTablet" src="{% static 'img/imagen-informate-tablet.png' %}" alt="informate">
+            </div>
+            <div class="textConsejos">
+                <div class="boxTextConsejos">
+                    <h2>Consejos para cuidar tu mente</h2>
+                    <p>Cada día puedes realizar actividades para mantener tu mente sana y evitar futuros problemas</p>
+                    <div class="boxVer">
+                        <img src="{% static 'img/ver.png' %}" alt="ver">
+                        <a href="{% url 'consejos' %}">mostrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="olaBottom" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.41,145.55 C133.46,12.33 337.18,219.56 500.27,87.33 L500.00,150.00 L-1.41,152.45 Z" style="stroke: none; fill: #ffff"></path></svg></div>
+            <div class="olaBottomMovil" style="height: 50px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.28,150.48 C132.89,57.72 378.94,76.47 501.41,152.45 L501.41,151.47 L0.28,150.48 Z" style="stroke: none; fill: #ffff;"></path></svg></div>
+        </div>
+    </section>
+    <section class="bloque3">
+        <h2 class="titulo">Principales enfermedades</h2>
+        <div class="contenedor-bloque3">
+
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button class="carousel__anterior">
+                        <img src="{% static 'img/flecha-izquierda.png' %}" class="chevron">
+                    </button>
+
+                    <div class="carousel__lista">
+                        {% for enfermedad in enfermedades %}
+                        <div class="carousel__elemento">
+                            <a href="alcoholismo.html"><img src="{{enfermedad.imagenEF.url}}"></a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <button class="carousel__siguiente">
+                        <img src="{% static 'img/flecha-correcta.png' %}" class="chevron">
+                    </button>
+                </div>
+    
+                <div role="tablist" class="carousel__indicadores"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id= "contacto" class="Bloque4">
+        <div class="barra"><h2>Personal de contacto profesional</h2></div>
+        <div class="images glide">
+        <div class="glide__track" data-glide-el="track">                  
+            <ul class="glide__slides">
+            <li class="glide__slide hexagono">
+                <img src="{% static 'img/doctores/5.jpg' %}" alt="">
+                <h3>DRA. VIRGINIA</h3>
+                <div class="linea-division-doctores"></div>
+                <p><b>Centro de salud:</b> "San Juan de Dios"</p>
+                <p><b>Celular:</b> 959944957</p>
+            </li>
+
+            <li class="glide__slide hexagono">
+                <img src="{% static 'img/doctores/3.jpg' %}" alt="">
+                <h3>DR. RAFAEL</h3>
+                <div class="linea-division-doctores"></div>
+                <p><b>Centro de salud:</b> "Espíritu Santo"</p>
+                <p><b>Celular:</b> 992319121</p>
+            </li>
+
+            <li class="glide__slide hexagono">
+                <img src="{% static 'img/doctores/2.jpg' %}" alt="">
+                <h3>DRA. MÓNICA</h3>
+                <div class="linea-division-doctores"></div>
+                <p><b>Centro de salud:</b> "Alcides Carreón"</p>
+                <p><b>Celular:</b> 971618181</p>
+            </li>
+
+            <li class="glide__slide hexagono">
+                <img src="{% static 'img/doctores/4.jpg' %}" alt="">
+                <h3>DR. JUAN</h3>
+                <div class="linea-division-doctores"></div>
+                <p><b>Centro de salud:</b> "Hipólito Unanue"</p>
+                <p><b>Celular:</b> 994571025</p>
+            </li>
+
+            <li class="glide__slide hexagono">
+                <img src="{% static 'img/doctores/1.jpg' %}" alt="">
+                <h3>DR. PABLO</h3>
+                <div class="linea-division-doctores"></div>
+                <p><b>Centro de salud:</b> "Sagrada Familia"</p>
+                <p><b>Celular:</b> 991504987</p>
+            </li>
+
+            </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+        </div>
+    </div>
+    </section>
+    <script src="{% static 'js/script.js' %}"></script>
+    <!--GLIDE-->
+    <script src="{% static 'js/script2.js' %}"></script>
+    <!--GLIDER-->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="{% static 'js/app.js' %}"></script>
+{% endblock %}
+    

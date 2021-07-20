@@ -9,7 +9,7 @@
     <link rel="Stylesheet" href="{% static 'css/estilos.css' %}">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
 	<link rel="Stylesheet" href="{% static 'css/enfermedades.css' %}">
-    <title>Maquetado</title>
+    <title>Salud Mental</title>
     
     <!--GLIDE.JS-->
     <script src="{% static 'js/glide.min.js' %}" charset="utf-8"></script>
@@ -23,8 +23,16 @@
 	
 </head>
 <body>
-	{% block content %}
-	{% endblock %}  
+    <!-- Incluye toda la seccion de codigo del navbar -->
+    {% include 'navbar.html' %}
+    <!-- Incluye toda la seccion de codigo del body de la homepage -->
+    {% block content %}
+        
+    {% endblock content %}
+    <!-- Incluye la seccion de codigo del footer-->
+
+    
     <script src="{% static 'js/script.js' %}"></script>
+        
 </body>
 </html>
