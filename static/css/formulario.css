@@ -18,52 +18,102 @@ h1,h2{
   margin: 0 40px;
   text-align: center;
 }
-.tarjetaTest{
-  background-color: #F2FDFF;
-  max-width: 800px;
-  border-radius: 10px;
-  padding:20px;
-  font-family: 'Rosario', sans-serif;
-  margin:50px auto;
-  padding:40px ;
-}
-.tarjetaTest p{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.tarjetaTest p span{
-  font-size: 1.7rem;
-}
-.tarjetaTest .opciones{
-  width:100%;
+.tarjeta{
+  background-color:#E5E5E5;
+  border-radius: 30px;
+  padding:15px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top:30px ;
+  margin:20px auto;
   flex-wrap: wrap;
-}
-.tarjetaTest  .opcion{
-  min-width: 90px;
-}
-.tarjetaTest label{
-  margin-left: 5px;
+  justify-content: center;
 }
 
-.buttom{
-  border: none;  
-  background-color: #3BAFBF;
-  padding:5px 20px;
-  font-family: 'Rosario', sans-serif;
-  color: #ffff;
-  border-radius: 5px;
-  font-size: 1.3rem;
-  width: 100px;
-  margin-bottom: 50px;
+.tarjeta__img-box{
+  user-select: none;
+  display: flex;
+  justify-content: center;
 }
-.buttom:hover{
-  background-color: #26747e;
+.tarjeta__img-box--img{
+  width:80%;
+  max-width:960px;
+  min-width:200px;
+}
+.pregunta{
+  display:flex;
+  align-items: center;
+  max-width: 500px;
+  position: relative;
+  overflow-x:hidden;
+}
+
+.pregunta__texto{
+  font-family:'ABeeZee', sans-serif;
+  min-width: 100%;
+  position: relative;
+  transition: .5s all ease;
+}
+.pregunta__texto-title{
+  color: #3BAFBF;
+  font-size: 1.6rem;
+  margin:0;
+}
+.pregunta__texto-parrafo{
+  font-size: 2rem;
+}
+/*Parte de los botones*/
+.opciones{
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+}
+.opcion{
+  border-radius: 32px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #ffff;
+  font-family:'ABeeZee', sans-serif;
+  font-size:1.2rem;
+  user-select: none;
+}
+.opcion__si{
+  background-color: #3BAFBF;
+}
+.opcion__si:active{
+  box-shadow: 1px 0px 17px 1px rgba(0,0,0,0.75);
+}
+.opcion__si:hover{
+  background-color: #349ba8;
+}
+.opcion__no{
+  background-color:#005467;
+}
+.opcion__no:active{
+  box-shadow: 1px 0px 17px 1px rgba(0,0,0,0.75);
+}
+.opcion__no:hover{
+  background-color:#013f4d;
+}
+/*Parte de la barra que indica cuanto vas*/
+.carga-box{
+  max-width: 1400px;
+  position: relative;
+  height: 30px;
+  border:2px solid#005467;
+  border-radius: 32px;
+  margin:20px;
+  width: 60%;
+  user-select: none;
+}
+.carga__barra{
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  background-color:#005467 ;
+  height: 100%;
+  width: 0;
+  transition:width 0.5s ease;
 }
 
 /*parte final del resultado*/
@@ -112,11 +162,16 @@ h1,h2{
    font-size:1rem;
    text-align: center;
  }
-@media screen and (max-width:600px){
-  .tarjetaTest .opciones{
-    flex-direction: column;
+ @media screen and (max-width:1000px){
+  .tarjeta{
+    width:70%;
   }
-  .tarjetaTest .opcion{
-    margin:10px auto;
+}
+@media screen and (max-width:400px){
+  .pregunta__texto-title{
+    font-size: 1rem;
+  }
+  .pregunta__texto-parrafo{
+    font-size: 1.5rem;
   }
 }

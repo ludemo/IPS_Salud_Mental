@@ -1,320 +1,159 @@
+{% extends 'index.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Formulario</title>
-</head>
-<body>
-    <!-- Incluye toda la seccion de codigo del navbar -->
-    {% include 'navbar.html'%}
-  <div id="formulario" class="contenido">
-      <h1>Diagnostico general</h1>
-      <p>Responda todas las preguntas con sinceridad , se le dara un diagnostico general en base a datos recolectados,  recuerde esto no es 100% seguro a como lo haría un profesional capacitado, solo un diagnostico general.</p>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>1.</span> ¿Tiene problemas para dormir desde hace algunos días o incluso meses?.</p>
-        <div class="opciones">
+{% block content %}
 
-          <div class="opcion">
-            <input id="p1b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
+<div id="formulario" class="contenido">
+    <h1>¿Cómo esta tu salud mental?</h1>
+    <p>Con estas preguntas usted podrá identificar señales tempranas y solicitar ayuda profesional.</p>
+    <div class="tarjeta">
+        <div class="pregunta">
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">1</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Siente que las personas en su entorno son mucho mejores o peores que usted?
+              </p>
+            </div>
+            <div class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">2</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Tiene dificultades para comunicarse con sus amigos o familia?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">3</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿No siente ganas de comer, evita hacerlo o simplemente se le olvida?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">4</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Las personas de su entorno se quejan de que usted no las escucha?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">5</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Consume algún tipo de drogas o alcohol para compensar algún problema?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">6</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Con frecuencia pierde la noción del tiempo?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">7</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Realiza múltiples tareas durante todo el día y siente que no puede parar?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">8</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Experimenta sensaciones que le indican que la vida no tiene sentido?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">9</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Le cuesta sentirse con plenitud en el trabajo, en las reuniones sociales o a nivel intelectual?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">10</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Todo en su vida gira alrededor de un solo tema o a una misma idea?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">11</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Siente que las personas en su entorno son mucho mejores o peores que usted?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">12</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Se ha tornado irritable?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">13</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Permanece mucho tiempo acostado?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">14</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Le cuesta iniciar o terminar alguna tarea?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">15</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Tiende a aislarse?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">16</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Experimenta que nadie lo entiende y que se siente solo?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">17</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Tiene dificultades permanentes con su pareja?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">18</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Ha perdido el deseo sexual?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">19</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Se siente demasiado cansado o con poca energía constantemente?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">20</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Experimenta falta de amor propio y que sus acciones decepcionan a los demás?
+              </p>
+            </div>
+        </div>
+        <div class="tarjeta__img-box">
+          <img class ="tarjeta__img-box--img" src="{% static 'img/test.png'%}" alt="">
+        </div>
+    </div>
+    <div class="opciones">
+      <div  id="si" class="opcion opcion__si">SI</div>
+      <div  id="no" class="opcion opcion__no">NO</div>
+    </div>
+    <div class="carga-box">
+      <div id="barra-carga" class="carga__barra"></div>
+    </div>
+</div>
 
-          <div class="opcion">
-            <input id="p1b2"type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-
+    <div id="respuesta" class="respuesta">
+      <h2>Resultados</h2>
+      <div class="box-resultado">
+        <div class="veces">
+          <p>Usted Indicó <br><span id="cantidadVeces">0</span><br> veces sí</p>
         </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>2.</span> ¿Tiene dificultades para comunicarse con sus amigos o familia?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p2b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p2b2"type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>3.</span>¿No siente ganas de comer, evita hacerlo o simplemente se le olvida?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p3b1" type="radio" name="opcion1">
-            <label for="opcion1">sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p3b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>4.</span> ¿Las personas de su entorno se quejan de que usted no las escucha?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p4b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p4b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>5.</span> ¿Consume algún tipo de drogas o alcohol para compensar algún problema?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p5b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p5b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>6.</span>¿Con frecuencia pierde la noción del tiempo?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p6b1"type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p6b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>7.</span> ¿Realiza múltiples tareas durante todo el día y siente que no puede parar?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p7b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p7b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>8.</span> ¿Experimenta sensaciones que le indican que la vida no tiene sentido?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p8b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p8b2"type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>9.</span> ¿Le cuesta sentirse con plenitud en el trabajo, en las reuniones sociales o a nivel intelectual?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p9b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p9b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>10.</span> ¿Todo en su vida gira alrededor de un solo tema o a una misma idea?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p10b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p10b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>11.</span> ¿Siente que las personas en su entorno son mucho mejores o peores que usted?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p11b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p11b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>12.</span> ¿Se ha tornado irritable?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p12b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p12b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>13.</span> ¿Permanece mucho tiempo acostado?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p13b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p13b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>14.</span> ¿Le cuesta iniciar o terminar alguna tarea?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p14b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p14b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>15.</span> ¿Tiende a aislarse?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p15b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p15b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>16.</span> ¿Experimenta que nadie lo entiende y que se siente solo?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p16b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p16b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>17.</span> ¿Tiene dificultades permanentes con su pareja?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p17b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p17b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>18.</span> ¿Ha perdido el deseo sexual?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p18b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p18b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-      <form action="">
-        <div class="tarjetaTest">
-        <p><span>19.</span> ¿Se siente demasiado cansado o con poca energía constantemente?.</p>
-        <div class="opciones">
-          <div class="opcion">
-            <input id="p19b1" type="radio" name="opcion1">
-            <label for="opcion1">Sí</label>
-          </div>
-          <div class="opcion">
-            <input id="p19b2" type="radio" name="opcion1">
-            <label for="opcion1">No</label>
-          </div>
-        </div>
-        </div>
-      </form>
-
-      <button class ="buttom" type="submit" onclick="formulario()">Enviar</button>
-  </div>
-
-      <div id="respuesta" class="respuesta">
-        <h2>Resultados</h2>
-        <div class="box-resultado">
-          <div class="veces">
-            <p>Usted Indicó <br><span id="cantidadVeces">0</span><br> veces sí</p>
-          </div>
-          <div class="texto-resp">
-            <p>Si ha respondido “sí” a más de cinco preguntas no hay duda de que tiene que consultar lo más pronto posible con profesionales de la salud mental. </p>
-          </div>
-        </div>
-        <div class="avalado">
-          Este test fue realizado por la Unidad de Salud EL TIEMPO con la asesoría de la Asociación Colombiana de Psiquiatría y no tiene valor diagnóstico. Solo es una guía para identificar tempranamente posibles trastornos que deben ser revisados por profesionales de la salud.
+        <div class="texto-resp">
+          <p>Si ha respondido “sí” a más de cinco preguntas no hay duda de que tiene que consultar lo más pronto posible con profesionales de la salud mental. </p>
         </div>
       </div>
-</body>
-</html>
+      <div class="avalado">
+        Este test fue realizado por la Unidad de Salud EL TIEMPO con la asesoría de la Asociación Colombiana de Psiquiatría y no tiene valor diagnóstico. Solo es una guía para identificar tempranamente posibles trastornos que deben ser revisados por profesionales de la salud.
+      </div>
+    </div>
+{% endblock content %}
+  
