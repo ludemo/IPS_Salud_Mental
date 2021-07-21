@@ -7,20 +7,9 @@ from django.conf import settings
 from django.conf.urls.static import static 
  
 urlpatterns = [
-    path('enfermedades', views.EnfermedadListView.as_view(), name = 'enfermedades'),
+    #path('enfermedades', views.EnfermedadListView.as_view(), name = 'enfermedades'),
     #url correspondiente a la seccion de consejos
-
     path('consejos', views.ConsejoView.as_view(), name = 'consejos'),
-    #url correspondiente a la enfermedad depresion
-    path('depresion', views.depresion, name = 'depresion'),
-    #url correspondiente a la enfermedad alcoholismo
-    path('alcoholismo', views.alcoholismo, name = 'alcoholismo'),
-    #url correspondiente a la enfermedad psicosis
-    path('psicosis', views.psicosis, name = 'psicosis'),
-    #url correspondiente a la enfermedad ansiedad
-    path('ansiedad', views.ansiedad, name = 'ansiedad'),
-    #url correspondiente a violencia familiar
-    path('violenciafamiliar', views.violencia_familiar, name = 'violenciafamiliar'),
-
-    path('<int:pk>', views.EnfermedadDetailView.as_view(), name="enfermedad-detalle"),
+    #url correspondiente a las enfermedades
+    path('<int:pk>', views.EnfermedadDetailView.as_view(), name="enfermedad"),
 ]

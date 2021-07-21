@@ -15,17 +15,12 @@ class ConsejoView(ListView):
     template_name = 'consejos.html'
     model = Consejos
 
-class EnfermedadListView(ListView):
-    template_name = "enfermedades.html" 
-    model = Enfermedad
-
 class EnfermedadDetailView(DetailView):
-    template_name = "enfermedades-detalle.html"
+    template_name = "enfermedades.html"
     model = Enfermedad
     def get_context_data(self, **kwargs):
         context = super(EnfermedadDetailView,self).get_context_data(**kwargs)
         context['enfermedades_lista'] = Enfermedad.objects.all()
-        print(context)
         return context
     
 

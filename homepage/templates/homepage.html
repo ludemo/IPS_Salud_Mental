@@ -20,7 +20,7 @@
             </div>
             <div class="textConsejos">
                 <div class="boxTextConsejos">
-                    <h2>Consejos para cuidar tu mente</h2>
+                    <h2 style="color: #ffffff;">Consejos para cuidar tu mente</h2>
                     <p>Cada día puedes realizar actividades para mantener tu mente sana y evitar futuros problemas</p>
                     <div class="boxVer">
                         <img src="{% static 'img/ver.png' %}" alt="ver">
@@ -45,7 +45,7 @@
                     <div class="carousel__lista">
                         {% for enfermedad in enfermedades %}
                         <div class="carousel__elemento">
-                            <a href="alcoholismo.html"><img src="{{enfermedad.imagenEF.url}}"></a>
+                            <a href="{% url 'enfermedad' enfermedad.id %}"><img src="{{enfermedad.imagenET.url}}"></a>
                         </div>
                         {% endfor %}
                     </div>
