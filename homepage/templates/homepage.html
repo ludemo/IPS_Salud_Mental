@@ -66,46 +66,16 @@
         <div class="images glide">
         <div class="glide__track" data-glide-el="track">                  
             <ul class="glide__slides">
+            
+            {% for personal in personalM  %}
             <li class="glide__slide hexagono">
-                <img src="{% static 'img/doctores/5.jpg' %}" alt="">
-                <h3>DRA. VIRGINIA</h3>
+                <img src="{{personal.imagenP.url}}" alt="">
+                <h3>{{personal.nombreP}}</h3>
                 <div class="linea-division-doctores"></div>
-                <p><b>Centro de salud:</b> "San Juan de Dios"</p>
-                <p><b>Celular:</b> 959944957</p>
-            </li>
-
-            <li class="glide__slide hexagono">
-                <img src="{% static 'img/doctores/3.jpg' %}" alt="">
-                <h3>DR. RAFAEL</h3>
-                <div class="linea-division-doctores"></div>
-                <p><b>Centro de salud:</b> "Espíritu Santo"</p>
-                <p><b>Celular:</b> 992319121</p>
-            </li>
-
-            <li class="glide__slide hexagono">
-                <img src="{% static 'img/doctores/2.jpg' %}" alt="">
-                <h3>DRA. MÓNICA</h3>
-                <div class="linea-division-doctores"></div>
-                <p><b>Centro de salud:</b> "Alcides Carreón"</p>
-                <p><b>Celular:</b> 971618181</p>
-            </li>
-
-            <li class="glide__slide hexagono">
-                <img src="{% static 'img/doctores/4.jpg' %}" alt="">
-                <h3>DR. JUAN</h3>
-                <div class="linea-division-doctores"></div>
-                <p><b>Centro de salud:</b> "Hipólito Unanue"</p>
-                <p><b>Celular:</b> 994571025</p>
-            </li>
-
-            <li class="glide__slide hexagono">
-                <img src="{% static 'img/doctores/1.jpg' %}" alt="">
-                <h3>DR. PABLO</h3>
-                <div class="linea-division-doctores"></div>
-                <p><b>Centro de salud:</b> "Sagrada Familia"</p>
-                <p><b>Celular:</b> 991504987</p>
-            </li>
-
+                <p><b>Centro de salud: <br></b> {{personal.centroP}}</p>
+                <p><b>Celular:</b>{{personal.celularP}}</p>
+            </li>    
+            {% endfor %}            
             </ul>
         </div>
 

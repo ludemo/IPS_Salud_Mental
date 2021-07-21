@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView, DetailView
 
 from django.http import JsonResponse
 
-from .models import Consejos
+from .models import Consejos, Enfermedad
 
 
 
@@ -11,14 +11,23 @@ from .models import Consejos
 # Create your views here.
 #Views basadas en función para renderizar los transtornos de salud mental
 
-class Consejo(TemplateView):
+class ConsejoView(ListView):
     template_name = 'consejos.html'
+    model = Consejos
 
-    def get(self, request, *args, **kwargs):
-        data = Consejos.objects.all()
+class EnfermedadListView(ListView):
+    template_name = "enfermedades.html" 
+    model = Enfermedad
 
-        return JsonResponse(data)
-
+class EnfermedadDetailView(DetailView):
+    template_name = "enfermedades-detalle.html"
+    model = Enfermedad
+    def get_context_data(self, **kwargs):
+        context = super(EnfermedadDetailView,self).get_context_data(**kwargs)
+        context['enfermedades_lista'] = Enfermedad.objects.all()
+        print(context)
+        return context
+    
 
 
 def consejos(request, *args, **kwargs):
@@ -33,3 +42,5 @@ def psicosis(request, *args, **kwargs):
     return render(request, "psicosis.html", {})
 def violencia_familiar(request, *args, **kwargs):
     return render(request, "violencia_familiar.html", {})
+
+

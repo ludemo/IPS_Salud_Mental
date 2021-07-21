@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<section class="bloque-carrusel">
+    <div class="images glide">
+        <div class="glide__track" data-glide-el="track">                  
+            <ul class="glide__slides">
+                
+                {% for enfermedad in object_list  %}
+                <li class="glide__slide">
+                    <a href="{% url 'enfermedad-detalle' enfermedad.id %}"><img src="{{enfermedad.imagenEF.url}}" alt=""></a>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+</section>
+<script src="{% static 'js/script.js' %}"></script>
+<!--GLIDE-->
+<script src="{% static 'js/script3.js' %}"></script>
+{% endblock content %}
+
+{% block content2 %}   
+
+{% endblock content2 %}
+    

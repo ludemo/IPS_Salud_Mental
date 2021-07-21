@@ -1,33 +1,28 @@
+{% extends 'index.html' %}
 {% load static %}
-<!-- Seccion de html que incluye todo el codigo referente a la enfermedad de violencia familar -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Violencia familiar</title>
-</head>
-<body>
-    <!-- Incluye toda la seccion de codigo del navbar -->
-    {% include 'navbar.html'%}
-    <!-- Incluye toda la seccion de codigo del carrusel de enfermedades -->
-    {% include 'carrusel_enfermedades.html'%}
 
-    <section class="enfermedad">
-        <h2>Violencia Familiar</h2>
-        <div class="descripcion">
-            <p>Tipo de abuso que se presenta cuando uno de los integrantes de la familia incurre,
-                 de manera deliberada, en maltratos a nivel físico o emocional hacia otro.</p>
-	    <img src="{% static 'img/enfermedades/violencia-familiar.png' %}">
-        </div>
-        <h2>Estrategias</h2>
-        <div class="estrategias">
-		<img src="{% static 'img/cerebro.png' %}">
-            <ul>
-                <li>Buscar ayuda profesional y en grupos de apoyo.</li><br>
-                <li>Realizar denuncia ante las autoridades.</li><br>
-                <li>Búsqueda de apoyo en familiares y amigos.</li><br>
-                <li>Separación y escape del abuso.</li><br>
-            </ul>
-        </div>
-    </section>
-</body>
-</html>
+{% block content %}
+<!-- Incluye toda la seccion de codigo del carrusel de enfermedades -->
+{% include 'carrusel_enfermedades.html'%}
+<section class="enfermedad">
+    <h2>Violencia Familiar</h2>
+    <div class="descripcion">
+        <p>Tipo de abuso que se presenta cuando uno de los integrantes de la familia incurre,
+             de manera deliberada, en maltratos a nivel físico o emocional hacia otro.</p>
+    <img src="{% static 'img/enfermedades/violencia-familiar.png' %}">
+    </div>
+    <h2>Estrategias</h2>
+    <div class="estrategias">
+    <img src="{% static 'img/cerebro.png' %}">
+        <ul>
+            <li>Buscar ayuda profesional y en grupos de apoyo.</li><br>
+            <li>Realizar denuncia ante las autoridades.</li><br>
+            <li>Búsqueda de apoyo en familiares y amigos.</li><br>
+            <li>Separación y escape del abuso.</li><br>
+        </ul>
+    </div>
+</section>
+{% endblock content %}
+    
+
+

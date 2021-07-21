@@ -1,13 +1,7 @@
+{% extends 'index.html' %}
 {% load static %}
-<!-- Seccion de html que incluye todo el codigo referente a la enfermedad de ansiedad -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Ansiedad</title>
-</head>
-<body>
-    <!-- Incluye toda la seccion de codigo del navbar -->
-    {% include 'navbar.html'%}
+
+{% block content %}
     <!-- Incluye toda la seccion de codigo del carrusel de enfermedades -->
     {% include 'carrusel_enfermedades.html'%}
     <section class="enfermedad">
@@ -39,5 +33,5 @@
             </ul>
         </div>
     </section>
-</body>
-</html>
+{% endblock content %}
+    

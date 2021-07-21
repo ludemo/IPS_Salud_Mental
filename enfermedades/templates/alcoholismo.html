@@ -1,36 +1,29 @@
+{% extends 'index.html' %}
 {% load static %}
-<!-- Seccion de html que incluye todo el codigo referente a la enfermedad de alcoholismo -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Alcoholismo</title>
-</head>
-<body>
-    <!-- Incluye toda la seccion de codigo del navbar -->
-    {% include 'navbar.html'%}
-    <!-- Incluye toda la seccion de codigo del carrusel de enfermedades -->
     {% include 'carrusel_enfermedades.html'%}
 
-    <section class="enfermedad">
-        <h2>Alcoholismo</h2>
-        <div class="descripcion">
-            <p>Es una enfermedad crónica, progresiva y en muchos casos mortal producida por el consumo incontrolado de bebidas alcohólicas,
-                 que interfieren en la salud física, mental, social y/o familiar así como en las responsabilidades laborales.</p>
-	    <img src="{% static 'img/enfermedades/alcoholismo.png' %}">
-        </div>
-        <h2>Estrategias</h2>
-        <div class="estrategias">
-		<img src="{% static 'img/cerebro.png' %}">
-            <ul>
-                <li>Moderacion <br>
-                    Conocer un limite hasta donde puedas resistir dichas bebidas.</li><br>
-                <li>Estar con gente que no bebe <br>
-                    Estar con  gente  que no incentivan el consumo de alcohol. Además, lo más habitual es que conozcan otras formas para entretenerse.</li><br>
-                <li>Probar actividades sin alcohol <br>
-                    Probar nuevos deportes o apuntarse a un curso de idiomas. La bebida no forma parte de este tipo de actividades
-                     y así se puede disfrutar de una experiencia con los amigos en plenas facultades.</li><br>
-            </ul>
-        </div>
-    </section>
-</body>
-</html>
+{% block content %}
+<section class="enfermedad">
+    <h2>Alcoholismo</h2>
+    <div class="descripcion">
+        <p>Es una enfermedad crónica, progresiva y en muchos casos mortal producida por el consumo incontrolado de bebidas alcohólicas,
+             que interfieren en la salud física, mental, social y/o familiar así como en las responsabilidades laborales.</p>
+    <img src="{% static 'img/enfermedades/alcoholismo.png' %}">
+    </div>
+    <h2>Estrategias</h2>
+    <div class="estrategias">
+    <img src="{% static 'img/cerebro.png' %}">
+        <ul>
+            <li>Moderacion <br>
+                Conocer un limite hasta donde puedas resistir dichas bebidas.</li><br>
+            <li>Estar con gente que no bebe <br>
+                Estar con  gente  que no incentivan el consumo de alcohol. Además, lo más habitual es que conozcan otras formas para entretenerse.</li><br>
+            <li>Probar actividades sin alcohol <br>
+                Probar nuevos deportes o apuntarse a un curso de idiomas. La bebida no forma parte de este tipo de actividades
+                 y así se puede disfrutar de una experiencia con los amigos en plenas facultades.</li><br>
+        </ul>
+    </div>
+</section>
+{% endblock content %}
+    
+

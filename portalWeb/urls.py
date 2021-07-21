@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static 
+from homepage.views import HomeView
 
 from homepage import views
 
@@ -24,7 +25,7 @@ urlpatterns = [
     #url correspondiente a la seccion admin
     path('admin/', admin.site.urls),
     #url correspondiente a la pagina principal o homepage
-    path('', views.home, name = 'home'),
+    path('', HomeView.as_view(), name = 'home'),
     #incluye a todas las urls de la app formularios
     path('formulario/', include('formulario.urls')),
     #incluye a todas las urls de la app enfermedades

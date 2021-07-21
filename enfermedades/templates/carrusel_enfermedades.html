@@ -6,6 +6,13 @@
     <div class="images glide">
         <div class="glide__track" data-glide-el="track">                  
             <ul class="glide__slides">
+                
+                {% for enfermedad in object_list  %}
+                <li class="glide__slide">
+                    <a href="{% url 'ansiedad' %}"><img src="{{enfermedad.imagenEF.url}}" alt=""></a>
+                </li>
+                {% endfor %}
+                    
                 <li class="glide__slide">
                     <a href="{% url 'ansiedad' %}"><img src="{% static 'img/carrusel-nombres/ansiedad.png' %}" alt=""></a>
                 </li>

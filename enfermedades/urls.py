@@ -1,3 +1,4 @@
+from enfermedades.models import Enfermedad
 from homepage import views
 from enfermedades import views
 from django.contrib import admin
@@ -6,8 +7,10 @@ from django.conf import settings
 from django.conf.urls.static import static 
  
 urlpatterns = [
+    path('enfermedades', views.EnfermedadListView.as_view(), name = 'enfermedades'),
     #url correspondiente a la seccion de consejos
-    path('consejos', views.consejos, name = 'consejos'),
+
+    path('consejos', views.ConsejoView.as_view(), name = 'consejos'),
     #url correspondiente a la enfermedad depresion
     path('depresion', views.depresion, name = 'depresion'),
     #url correspondiente a la enfermedad alcoholismo
@@ -18,4 +21,6 @@ urlpatterns = [
     path('ansiedad', views.ansiedad, name = 'ansiedad'),
     #url correspondiente a violencia familiar
     path('violenciafamiliar', views.violencia_familiar, name = 'violenciafamiliar'),
+
+    path('<int:pk>', views.EnfermedadDetailView.as_view(), name="enfermedad-detalle"),
 ]
