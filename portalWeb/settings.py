@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'homepage.apps.HomepageConfig',
     'formulario',
     'enfermedades',
+    'mapa',
 ]
 
 MIDDLEWARE = [
@@ -63,6 +64,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR, "formulario/templates"),
             os.path.join(BASE_DIR, "enfermedades/templates"),
             os.path.join(BASE_DIR, "homepage/templates"),
+            os.path.join(BASE_DIR, "mapa/templates"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

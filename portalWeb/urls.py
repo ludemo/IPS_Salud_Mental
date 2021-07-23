@@ -29,7 +29,9 @@ urlpatterns = [
     #incluye a todas las urls de la app formularios
     path('formulario/', include('formulario.urls')),
     #incluye a todas las urls de la app enfermedades
-    path('enfermedades/', include('enfermedades.urls'))
+    path('enfermedades/', include('enfermedades.urls')),
+    #incluye a todas las urls de la app mapa
+    path('mapa/', include('mapa.urls'))
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
