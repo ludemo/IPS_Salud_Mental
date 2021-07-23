@@ -65,6 +65,7 @@ TEMPLATES = [
             os.path.join(BASE_DIR, "enfermedades/templates"),
             os.path.join(BASE_DIR, "homepage/templates"),
             os.path.join(BASE_DIR, "mapa/templates"),
+            os.path.join(BASE_DIR, "estadisticas/templates"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

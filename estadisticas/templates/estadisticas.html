@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<section class="estadísticas-bloque1">
+    <div class="bloque1-figura"></div>
+    <div class="bloque1-contenedor">
+        <img src="{% static 'img/estadisticas-men.png' %}">
+        <div class="bloque1-contenedor-texto">
+            <h1>Gráficas y estadísticas</h1>
+            <p>Entérate de los datos estadísticos más recientes e interesantes de cada una de las enfermedades mentales</p>
+        </div>
+    </div>
+</section>
+
+<section class="estadísticas-bloque2">
+    <div class="bloque2-enfermedades">
+        <h2>Enfermedades</h2>
+        <a class="bloque2-enfermedad">Depresión</a>
+        <a class="bloque2-enfermedad">Psicosis</a>
+        <a class="bloque2-enfermedad">Alcoholismo</a>
+        <a class="bloque2-enfermedad">Violencia</a>
+        <a class="bloque2-enfermedad">Ansiedad</a>
+        <a></a>
+        <a></a>
+    </div>
+
+    <div class="bloque2-estadísticas">
+        <div class="bloque2-busquedas">
+            <div class="bloque2-buscar">
+                <img src="{% static 'img/lupa.png' %}">
+                <input type="text" placeholder="Escribe tu ciudad">
+            </div>
+            <div class="bloque2-buscar">
+                <img src="{% static 'img/lupa.png' %}">
+                <input type="text" placeholder="Escribe tu distrito">
+            </div>
+            <select>
+                <option>Femenino</option>
+                <option>Masculino</option>
+            </select>
+        </div>
+        <h2>Arequipa</h2>
+
+        <img class="gráfica" src="img/Gráfica.png">
+        <div class="bloque2-cifras">
+            <h3 class="cifras">25</h3>
+            <p class="texto">Casos graves</p>
+            <h3 class="cifras">11</h3>
+            <p class="texto">Casos recientes</p>
+            <h3 class="cifras">54</h3>
+            <p class="texto">Total de casos</p>
+        </div>
+    </div>       
+</section>
+
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock content %}
+    
