@@ -5,11 +5,13 @@
     <section class="mapa">
         <h1>Ubica tu Centro de Salud más cercano </h1>
         <select class="comentarios__select" name="centro__medico" id="centro__medico">
-            <option class="comentarios__opcion" >Arequipa</option>
-            <option class="comentarios__opcion" >Moquegua</option>
-            <option class="comentarios__opcion" >Tacna</option>
+            <option class="comentarios__opcion" selected >Seleccione centro medico</option>
+            <option class="comentarios__opcion" value="-16.4149,-71.532" >Hospital Honorio Delgado</option>
+            <option class="comentarios__opcion" value="-16.4027688,-71.5274817">Hospital Goyeneche</option>
+            <!--Agregar mas centros medicos-->
         </select>
-        <div class="mapita"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30617.460068502012!2d-71.55053257942197!3d-16.415554717576825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424ae4cd919067%3A0xab84b9bd3dadadb0!2sHospital%20Regional%20Honorio%20Delgado%20Espinoza!5e0!3m2!1ses!2spe!4v1626828931975!5m2!1ses!2spe" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div id="mapid" style="width: 900px; height: 700px;"></div>
+        <script src="{% static 'js/mapa.js'%}"></script>
         </div>
     </section>
     <section class="comentarios">
