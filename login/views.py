@@ -12,7 +12,7 @@ class RegisterUserView(CreateView):
     succes_url = reverse_lazy('login')
     template_name = 'register.html'
 
-class LoginViewUser(LoginView):
+class LoginUserView(LoginView):
     template_name = 'login.html'
 
     def dispatch(self, request, *args, **kwargs):

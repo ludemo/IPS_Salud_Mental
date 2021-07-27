@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'formulario',
     'enfermedades',
     'mapa',
+    'login'
 ]
 
 MIDDLEWARE = [
