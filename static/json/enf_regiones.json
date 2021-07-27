@@ -1,0 +1,1504 @@
+[
+ {
+   "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+   "Departamento": "ANCASH",
+   "Atendidos": 46,
+   "Atenciones": 98
+ },
+ {
+  "Enfermedad": "TRASTORNO DEPRESIVO",
+  "Departamento": "ANCASH",
+  "Atendidos": 399,
+  "Atenciones": 755
+  },
+  {
+    "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+    "Departamento": "ANCASH",
+    "Atendidos": 576,
+    "Atenciones": 936
+  },
+  {
+    "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+    "Departamento": "ANCASH",
+    "Atendidos": 5,
+    "Atenciones": 19
+  },
+  {
+    "Enfermedad": "ANSIEDAD",
+    "Departamento": "ANCASH",
+    "Atendidos": 240,
+    "Atenciones": 509
+  },
+  {
+    "Enfermedad": "INTENTO DE SUICIDIO",
+    "Departamento": "ANCASH",
+    "Atendidos": 5,
+    "Atenciones": 15
+  },
+  {
+    "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+    "Departamento": "ANCASH",
+    "Atendidos": 9,
+    "Atenciones": 18
+  },
+  {
+    "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+    "Departamento": "ANCASH",
+    "Atendidos": 73,
+    "Atenciones": 182
+  },
+  {
+    "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+    "Departamento": "ANCASH",
+    "Atendidos": 20,
+    "Atenciones": 45
+  },
+  {
+    "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+    "Departamento": "ANCASH",
+    "Atendidos": 576,
+    "Atenciones": 936
+  },
+
+  {
+   "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+   "Departamento": "APURIMAC",
+   "Atendidos": 100,
+   "Atenciones": 245
+  },
+  {
+  "Enfermedad": "TRASTORNO DEPRESIVO",
+  "Departamento": "APURIMAC",
+  "Atendidos": 1057,
+  "Atenciones": 2363
+  },
+  {
+    "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+    "Departamento": "APURIMAC",
+    "Atendidos": 1621,
+    "Atenciones": 3314
+  },
+  {
+    "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+    "Departamento": "APURIMAC",
+    "Atendidos": 10,
+    "Atenciones": 49
+  },
+  {
+    "Enfermedad": "ANSIEDAD",
+    "Departamento": "APURIMAC",
+    "Atendidos": 656,
+    "Atenciones": 1432
+  },
+  {
+    "Enfermedad": "INTENTO DE SUICIDIO",
+    "Departamento": "APURIMAC",
+    "Atendidos": 85,
+    "Atenciones": 110
+  },
+  {
+    "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+    "Departamento": "APURIMAC",
+    "Atendidos": 32,
+    "Atenciones": 98
+  },
+  {
+    "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+    "Departamento": "APURIMAC",
+    "Atendidos": 197,
+    "Atenciones": 375
+  },
+  {
+    "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+    "Departamento": "APURIMAC",
+    "Atendidos": 26,
+    "Atenciones": 53
+  },
+  {
+    "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+    "Departamento": "APURIMAC",
+    "Atendidos": 1,
+    "Atenciones": 1
+  },
+
+
+
+
+
+  {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "AREQUIPA",
+    "Atendidos": 116,
+    "Atenciones": 225
+   },
+   {
+   "Enfermedad": "TRASTORNO DEPRESIVO",
+   "Departamento": "AREQUIPA",
+   "Atendidos": 883,
+   "Atenciones": 1465
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "AREQUIPA",
+     "Atendidos": 1388,
+     "Atenciones": 2359
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "AREQUIPA",
+     "Atendidos": 5,
+     "Atenciones": 11
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "AREQUIPA",
+     "Atendidos": 1051,
+     "Atenciones": 1908
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "AREQUIPA",
+     "Atendidos": 9,
+     "Atenciones": 17
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "AREQUIPA",
+     "Atendidos": 10,
+     "Atenciones": 21
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "AREQUIPA",
+     "Atendidos": 224,
+     "Atenciones": 370
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "AREQUIPA",
+     "Atendidos": 29,
+     "Atenciones": 69
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "AREQUIPA",
+     "Atendidos": 1388,
+     "Atenciones": 2359
+   },
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "AYACUCHO",
+    "Atendidos": 97,
+    "Atenciones": 185
+   },
+   {
+   "Enfermedad": "TRASTORNO DEPRESIVO",
+   "Departamento": "AYACUCHO",
+   "Atendidos": 663,
+   "Atenciones": 1767
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "AYACUCHO",
+     "Atendidos": 1403,
+     "Atenciones": 3100
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "AYACUCHO",
+     "Atendidos": 9,
+     "Atenciones": 26
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "AYACUCHO",
+     "Atendidos": 311,
+     "Atenciones": 829
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "AYACUCHO",
+     "Atendidos": 5,
+     "Atenciones": 11
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "AYACUCHO",
+     "Atendidos": 7,
+     "Atenciones": 15
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "AYACUCHO",
+     "Atendidos": 147,
+     "Atenciones": 364
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "AYACUCHO",
+     "Atendidos": 49,
+     "Atenciones": 144
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "AYACUCHO",
+     "Atendidos": 1403,
+     "Atenciones": 3100
+   },
+
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "CAJAMARCA",
+    "Atendidos": 1,
+    "Atenciones": 1
+   },
+   {
+   "Enfermedad": "TRASTORNO DEPRESIVO",
+   "Departamento": "CAJAMARCA",
+   "Atendidos": 1,
+   "Atenciones": 1
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "CAJAMARCA",
+     "Atendidos": 3,
+     "Atenciones": 3
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "CAJAMARCA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "CAJAMARCA",
+     "Atendidos": 5,
+     "Atenciones": 5
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "CAJAMARCA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "CAJAMARCA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "CAJAMARCA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "CAJAMARCA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "CAJAMARCA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "CALLAO",
+    "Atendidos": 1117,
+    "Atenciones": 1941
+   },
+   {
+   "Enfermedad": "TRASTORNO DEPRESIVO",
+   "Departamento": "CALLAO",
+   "Atendidos": 2325,
+   "Atenciones": 3672
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "CALLAO",
+     "Atendidos": 4951,
+     "Atenciones": 7449
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "CALLAO",
+     "Atendidos": 14,
+     "Atenciones": 27
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "CALLAO",
+     "Atendidos": 2530,
+     "Atenciones": 4567
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "CALLAO",
+     "Atendidos": 4,
+     "Atenciones": 5
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "CALLAO",
+     "Atendidos": 5,
+     "Atenciones": 12
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "CALLAO",
+     "Atendidos": 94,
+     "Atenciones": 363
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "CALLAO",
+     "Atendidos": 227,
+     "Atenciones": 609
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "CALLAO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+
+
+  
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "CUSCO",
+    "Atendidos": 7,
+    "Atenciones": 9
+   },
+   {
+   "Enfermedad": "TRASTORNO DEPRESIVO",
+   "Departamento": "CUSCO",
+   "Atendidos": 342,
+   "Atenciones": 765
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "CUSCO",
+     "Atendidos": 2212,
+     "Atenciones": 3127
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "CUSCO",
+     "Atendidos": 1,
+     "Atenciones": 4
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "CUSCO",
+     "Atendidos": 164,
+     "Atenciones": 491
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "CUSCO",
+     "Atendidos": 3,
+     "Atenciones": 24
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "CUSCO",
+     "Atendidos": 2,
+     "Atenciones": 18
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "CUSCO",
+     "Atendidos": 35,
+     "Atenciones": 135
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "CUSCO",
+     "Atendidos": 3,
+     "Atenciones": 10
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "CUSCO",
+     "Atendidos": 1,
+     "Atenciones": 2
+   },
+
+
+
+
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "HUANCAVELICA",
+    "Atendidos": 70,
+    "Atenciones": 136
+   },
+   {
+   "Enfermedad": "TRASTORNO DEPRESIVO",
+   "Departamento": "HUANCAVELICA",
+   "Atendidos": 873,
+   "Atenciones": 1295
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "HUANCAVELICA",
+     "Atendidos": 1704,
+     "Atenciones": 2673
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "HUANCAVELICA",
+     "Atendidos": 13,
+     "Atenciones": 23
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "HUANCAVELICA",
+     "Atendidos": 427,
+     "Atenciones": 740
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "HUANCAVELICA",
+     "Atendidos": 24,
+     "Atenciones": 40
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "HUANCAVELICA",
+     "Atendidos": 18,
+     "Atenciones": 35
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "HUANCAVELICA",
+     "Atendidos": 130,
+     "Atenciones": 192
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "HUANCAVELICA",
+     "Atendidos": 19,
+     "Atenciones": 34
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "HUANCAVELICA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+
+
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "HUANUCO",
+    "Atendidos": 253,
+    "Atenciones": 669
+   },
+   {
+   "Enfermedad": "TRASTORNO DEPRESIVO",
+   "Departamento": "HUANUCO",
+   "Atendidos": 1512,
+   "Atenciones": 3101
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "HUANUCO",
+     "Atendidos": 1017,
+     "Atenciones": 2211
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "HUANUCO",
+     "Atendidos": 16,
+     "Atenciones": 41
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "HUANUCO",
+     "Atendidos": 2900,
+     "Atenciones": 5316
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "HUANUCO",
+     "Atendidos": 27,
+     "Atenciones": 38
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "HUANUCO",
+     "Atendidos": 43,
+     "Atenciones": 91
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "HUANUCO",
+     "Atendidos": 345,
+     "Atenciones": 747
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "HUANUCO",
+     "Atendidos": 156,
+     "Atenciones": 423
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "HUANUCO",
+     "Atendidos": 1,
+     "Atenciones": 3
+   },
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "ICA",
+    "Atendidos": 453,
+    "Atenciones": 942
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "ICA",
+     "Atendidos": 1988,
+     "Atenciones": 3931
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "ICA",
+     "Atendidos": 1898,
+     "Atenciones": 3454
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "ICA",
+     "Atendidos": 22,
+     "Atenciones": 39
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "ICA",
+     "Atendidos": 2712,
+     "Atenciones": 5050
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "ICA",
+     "Atendidos": 57,
+     "Atenciones": 93
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "ICA",
+     "Atendidos": 13,
+     "Atenciones": 35
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "ICA",
+     "Atendidos": 60,
+     "Atenciones": 104
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "ICA",
+     "Atendidos": 39,
+     "Atenciones": 39
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "ICA",
+     "Atendidos": 1,
+     "Atenciones": 4
+   },
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "JUNIN",
+    "Atendidos": 265,
+    "Atenciones": 454
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "JUNIN",
+     "Atendidos": 2197,
+     "Atenciones": 4077
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "JUNIN",
+     "Atendidos": 5096,
+     "Atenciones": 8404
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "JUNIN",
+     "Atendidos": 29,
+     "Atenciones": 61
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "JUNIN",
+     "Atendidos": 1942,
+     "Atenciones": 3509
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "JUNIN",
+     "Atendidos": 57,
+     "Atenciones": 83
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "JUNIN",
+     "Atendidos": 36,
+     "Atenciones": 56
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "JUNIN",
+     "Atendidos": 515,
+     "Atenciones": 959
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "JUNIN",
+     "Atendidos": 121,
+     "Atenciones": 314
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "JUNIN",
+     "Atendidos": 0,
+     "Atenciones": 1
+   },
+
+
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "LA LIBERTAD",
+    "Atendidos": 44,
+    "Atenciones": 52
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 189,
+     "Atenciones": 237
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 35,
+     "Atenciones": 63
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 2,
+     "Atenciones": 6
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 138,
+     "Atenciones": 224
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 4,
+     "Atenciones": 4
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 1,
+     "Atenciones": 2
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 47,
+     "Atenciones": 56
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 38,
+     "Atenciones": 50
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "LA LIBERTAD",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "LAMBAYEQUE",
+    "Atendidos": 438,
+    "Atenciones": 976
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 952,
+     "Atenciones": 2320
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 2778,
+     "Atenciones": 4732
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 8,
+     "Atenciones": 26
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 1277,
+     "Atenciones": 3119
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 9,
+     "Atenciones": 15
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 6,
+     "Atenciones": 24
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 136,
+     "Atenciones": 595
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 77,
+     "Atenciones": 266
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "LAMBAYEQUE",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+ 
+ 
+
+ 
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "LIMA",
+    "Atendidos": 1383,
+    "Atenciones": 3117
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "LIMA",
+     "Atendidos": 2320,
+     "Atenciones": 5215
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "LIMA",
+     "Atendidos": 3719,
+     "Atenciones": 7357
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "LIMA",
+     "Atendidos": 67,
+     "Atenciones": 98
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "LIMA",
+     "Atendidos": 3877,
+     "Atenciones": 8128
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "LIMA",
+     "Atendidos": 16,
+     "Atenciones": 46
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "LIMA",
+     "Atendidos": 32,
+     "Atenciones": 72
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "LIMA",
+     "Atendidos": 70,
+     "Atenciones": 176
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "LIMA",
+     "Atendidos": 105,
+     "Atenciones": 246
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "LIMA",
+     "Atendidos": 1,
+     "Atenciones": 7
+   },
+
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "LORETO",
+    "Atendidos": 90,
+    "Atenciones": 173
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "LORETO",
+     "Atendidos": 130,
+     "Atenciones": 251
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "LORETO",
+     "Atendidos": 34,
+     "Atenciones": 109
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "LORETO",
+     "Atendidos": 1,
+     "Atenciones": 2
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "LORETO",
+     "Atendidos": 236,
+     "Atenciones": 450
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "LORETO",
+     "Atendidos": 2,
+     "Atenciones": 2
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "LORETO",
+     "Atendidos": 3,
+     "Atenciones": 2
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "LORETO",
+     "Atendidos": 8,
+     "Atenciones": 24
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "LORETO",
+     "Atendidos": 40,
+     "Atenciones": 107
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "LORETO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+ 
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "MADRE DE DIOS",
+    "Atendidos": 2,
+    "Atenciones": 3
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 76,
+     "Atenciones": 148
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 225,
+     "Atenciones": 364
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 2,
+     "Atenciones": 3
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 26,
+     "Atenciones": 60
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 2,
+     "Atenciones": 7
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 1,
+     "Atenciones": 2
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 10,
+     "Atenciones": 42
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 14,
+     "Atenciones": 41
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "MADRE DE DIOS",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+   
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "MOQUEGUA",
+    "Atendidos": 146,
+    "Atenciones": 227
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 785,
+     "Atenciones": 1159
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 650,
+     "Atenciones": 1015
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 7,
+     "Atenciones": 12
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 652,
+     "Atenciones": 994
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 9,
+     "Atenciones": 17
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 4,
+     "Atenciones": 5
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 226,
+     "Atenciones": 326
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 42,
+     "Atenciones": 71
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "MOQUEGUA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "PIURA",
+    "Atendidos": 75,
+    "Atenciones": 214
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "PIURA",
+     "Atendidos": 317,
+     "Atenciones": 701
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "PIURA",
+     "Atendidos": 2106,
+     "Atenciones": 3235
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "PIURA",
+     "Atendidos": 4,
+     "Atenciones": 20
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "PIURA",
+     "Atendidos": 263,
+     "Atenciones": 637
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "PIURA",
+     "Atendidos": 3,
+     "Atenciones": 9
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "PIURA",
+     "Atendidos": 6,
+     "Atenciones": 23
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "PIURA",
+     "Atendidos": 126,
+     "Atenciones": 491
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "PIURA",
+     "Atendidos": 14,
+     "Atenciones": 44
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "PIURA",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "PUNO",
+    "Atendidos": 27,
+    "Atenciones": 54
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "PUNO",
+     "Atendidos": 453,
+     "Atenciones": 907
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "PUNO",
+     "Atendidos": 473,
+     "Atenciones": 834
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "PUNO",
+     "Atendidos": 6,
+     "Atenciones": 9
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "PUNO",
+     "Atendidos": 201,
+     "Atenciones": 246
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "PUNO",
+     "Atendidos": 10,
+     "Atenciones": 32
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "PUNO",
+     "Atendidos": 18,
+     "Atenciones": 53
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "PUNO",
+     "Atendidos": 35,
+     "Atenciones": 90
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "PUNO",
+     "Atendidos": 2,
+     "Atenciones": 16
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "PUNO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "SAN MARTIN",
+    "Atendidos": 83,
+    "Atenciones": 143
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 153,
+     "Atenciones": 746
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 1809,
+     "Atenciones": 3663
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 3,
+     "Atenciones": 19
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 195,
+     "Atenciones": 599
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 4,
+     "Atenciones": 11
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 4,
+     "Atenciones": 8
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 173,
+     "Atenciones": 463
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 26,
+     "Atenciones": 68
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "SAN MARTIN",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+ 
+ 
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "TACNA",
+    "Atendidos": 145,
+    "Atenciones": 221
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "TACNA",
+     "Atendidos": 250,
+     "Atenciones": 554
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "TACNA",
+     "Atendidos": 476,
+     "Atenciones": 889
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "TACNA",
+     "Atendidos": 2,
+     "Atenciones": 11
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "TACNA",
+     "Atendidos": 312,
+     "Atenciones": 792
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "TACNA",
+     "Atendidos": 6,
+     "Atenciones": 7
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "TACNA",
+     "Atendidos": 3,
+     "Atenciones": 3
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "TACNA",
+     "Atendidos": 122,
+     "Atenciones": 206
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "TACNA",
+     "Atendidos": 36,
+     "Atenciones": 45
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "TACNA",
+     "Atendidos": 1,
+     "Atenciones": 1
+   },
+
+    
+ 
+
+
+
+
+   {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "UCAYALI",
+    "Atendidos": 0,
+    "Atenciones": 0
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 1
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "UCAYALI",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+
+
+
+
+
+  {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Departamento": "PASCO",
+    "Atendidos": 0,
+    "Atenciones": 0
+   },
+   {
+     "Enfermedad": "TRASTORNO DEPRESIVO",
+     "Departamento": "PASCO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+     "Departamento": "PASCO",
+     "Atendidos": 4,
+     "Atenciones": 6
+   },
+   {
+     "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+     "Departamento": "PASCO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "ANSIEDAD",
+     "Departamento": "PASCO",
+     "Atendidos": 0,
+     "Atenciones": 2
+   },
+   {
+     "Enfermedad": "INTENTO DE SUICIDIO",
+     "Departamento": "PASCO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+     "Departamento": "PASCO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+     "Departamento": "PASCO",
+     "Atendidos": 2,
+     "Atenciones": 3
+   },
+   {
+     "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+     "Departamento": "PASCO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   },
+   {
+     "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+     "Departamento": "PASCO",
+     "Atendidos": 0,
+     "Atenciones": 0
+   }
+ 
+]

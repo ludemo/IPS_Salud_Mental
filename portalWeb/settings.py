@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homepage.apps.HomepageConfig',
+    'formulario',
+    'enfermedades',
+    'mapa',
+    'login'
 ]
 
 MIDDLEWARE = [
@@ -61,6 +65,8 @@ TEMPLATES = [
             os.path.join(BASE_DIR, "formulario/templates"),
             os.path.join(BASE_DIR, "enfermedades/templates"),
             os.path.join(BASE_DIR, "homepage/templates"),
+            os.path.join(BASE_DIR, "mapa/templates"),
+            os.path.join(BASE_DIR, "estadisticas/templates"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -132,3 +138,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+LOGIN_REDIRECT_URL = '/register/'

@@ -1,0 +1,81 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<section class="estadísticas-bloque1">
+    <div class="bloque1-figura"></div>
+    <div class="bloque1-contenedor">
+        <img src="{% static 'img/estadisticas-men.png' %}">
+        <div class="bloque1-contenedor-texto">
+            <h1>Gráficas y estadísticas</h1>
+            <p>Entérate de los datos estadísticos más recientes e interesantes de cada una de las enfermedades mentales</p>
+        </div>
+    </div>
+</section>
+
+<section class="estadísticas-bloque2">
+    <div class="bloque2-enfermedades">
+        <h2>Enfermedades</h2>
+        <a class="bloque2-enfermedad">Depresión</a>
+        <a class="bloque2-enfermedad">Psicosis</a>
+        <a class="bloque2-enfermedad">Alcoholismo</a>
+        <a class="bloque2-enfermedad">Violencia</a>
+        <a class="bloque2-enfermedad">Ansiedad</a>
+        <a></a>
+        <a></a>
+    </div>
+
+    <div class="bloque2-estadísticas">
+        <div class="bloque2-busquedas">
+            <select  class="bloque2-buscar" id="menu">
+                <option value="1"> Ancash</option>
+                <option value="2"> Apurimac</option>
+                <option value="3"> Arequipa</option>
+                <option value="4"> Ayacucho</option>
+                <option value="5"> Cajamarca</option>
+                <option value="6"> Callao</option>
+                <option value="7"> Cuzco</option>
+                <option value="8"> Huancavelica</option>
+                <option value="9"> Huanuco</option>
+                <option value="10"> Ica</option>
+                <option value="11"> Junin</option>
+                <option value="12"> La Libertad</option>
+                <option value="13"> Lambayeque</option>
+                <option value="14"> Lima</option>
+                <option value="15"> Loreto</option>
+                <option value="16"> Madre de Dios</option>
+                <option value="17"> Moquegua</option>
+                <option value="18"> Piura</option>
+                <option value="19"> Puno</option>
+                <option value="20"> San Martin</option>
+                <option value="21"> Tacna</option>
+                <option value="22"> Ucayali</option>
+                <option value="23"> Pasco</option>
+                <option value="24" selected>Elige</option>
+            </select>
+            <div class="bloque2-buscar">
+                <img src="{% static 'img/lupa.png' %}">
+                <input type="text" placeholder="Escribe tu distrito">
+            </div>
+            <select>
+                <option>Femenino</option>
+                <option>Masculino</option>
+            </select>
+        </div>
+
+        <!--<img class="gráfica" src="img/Gráfica.png">--> 
+        <div id="chart_div" ></div> 
+        <div class="bloque2-cifras">
+            <h3 class="cifras">25</h3>
+            <p class="texto">Casos graves</p>
+            <h3 class="cifras">11</h3>
+            <p class="texto">Casos recientes</p>
+            <h3 class="cifras">54</h3>
+            <p class="texto">Total de casos</p>
+        </div>
+        <h2>Arequipa</h2>
+    </div>       
+</section>
+
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock content %}
+    
