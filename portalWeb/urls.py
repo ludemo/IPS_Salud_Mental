@@ -33,7 +33,8 @@ urlpatterns = [
     #incluye a todas las urls de la app mapa
     path('mapa/', include('mapa.urls')),
     #incluye a todas las urls de la app estadisticas
-    path('estadisticas/', include('estadisticas.urls'))
+    path('estadisticas/', include('estadisticas.urls')),
+    path('login/', include('login.urls'))
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
