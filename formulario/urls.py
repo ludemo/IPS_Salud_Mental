@@ -5,5 +5,6 @@ from django.conf import settings
 from django.conf.urls.static import static 
 
 urlpatterns = [
+    #url corrrespondiente al formulario
     path('', views.formulario, name = 'formulario'),
 ]

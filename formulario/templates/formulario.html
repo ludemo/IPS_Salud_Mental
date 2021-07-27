@@ -1,48 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet">
-    <title>Formulario</title>
-</head>
-<body>
-    {% include 'navbar.html'%}
-    <body>
-		<div class="container">
-			{% block body %}
-			<form method="POST">
-				<div class="form-group text-center pt-3">
-					<h1 class="text-light">CONTESTE LAS SIGUIENTES PREGUNTAS</h1>
-				</div>
-				{% csrf_token %}
-				<div class="form-group mx-sm-4 pt-1">
-					<i class="message" >Formulario nº ...</i>
-					<!--{{ form.ForCod }}-->
-				</div>
-				<div class="form-group mx-sm-4 pt-1">
-					<i class="message" >1. Pregunta...</i>
-					<!--<input id="RP1" name="RP1" class = "form-group" value='{{ form.Resp1 }}'>-->
-					{{ form.Resp1 }}
-				</div>
-				<div class="form-group mx-sm-4 pt-1">
-					<i class="message" >2. Pregunta...</i>
-					<input id="RP2" name="RP2" class = "form-group" value='{{ form.Resp2 }}'>
-				</div>
-				<div class="form-group mx-sm-4 pt-1">
-					<i class="message" >3. Pregunta...</i>
-					<input id="RP3" name="RP3" class = "form-group" value='{{ form.Resp3 }}'>
-				</div>
-				<div class="form-group mx-sm-4 pt-1">
-					<i class="message" >4. Pregunta...</i>
-					<input id="RP4" name="RP4" class = "form-group" value='{{ form.Resp4 }}'>
-				</div>
-				<div class="form-group mx-sm-4 pt-1">
-					<input type='Submit' class="btn btn-block ingresar" value='Enviar'/>
-				</div>
-			</form>
-			{% endblock%}
-		</div>
-	</body>
-</html> 
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+<div id="formulario" class="contenido">
+    <h1>¿Cómo esta tu salud mental?</h1>
+    <p>Con estas preguntas usted podrá identificar señales tempranas y solicitar ayuda profesional.</p>
+    <div class="tarjeta">
+        <div class="pregunta">
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">1</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Siente que las personas en su entorno son mucho mejores o peores que usted?
+              </p>
+            </div>
+            <div class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">2</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Tiene dificultades para comunicarse con sus amigos o familia?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">3</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿No siente ganas de comer, evita hacerlo o simplemente se le olvida?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">4</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Las personas de su entorno se quejan de que usted no las escucha?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">5</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Consume algún tipo de drogas o alcohol para compensar algún problema?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">6</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Con frecuencia pierde la noción del tiempo?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">7</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Realiza múltiples tareas durante todo el día y siente que no puede parar?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">8</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Experimenta sensaciones que le indican que la vida no tiene sentido?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">9</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Le cuesta sentirse con plenitud en el trabajo, en las reuniones sociales o a nivel intelectual?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">10</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Todo en su vida gira alrededor de un solo tema o a una misma idea?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">11</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Siente que las personas en su entorno son mucho mejores o peores que usted?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">12</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Se ha tornado irritable?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">13</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Permanece mucho tiempo acostado?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">14</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Le cuesta iniciar o terminar alguna tarea?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">15</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Tiende a aislarse?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">16</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Experimenta que nadie lo entiende y que se siente solo?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">17</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Tiene dificultades permanentes con su pareja?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">18</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Ha perdido el deseo sexual?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">19</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Se siente demasiado cansado o con poca energía constantemente?
+              </p>
+            </div>
+            <div  class="pregunta__texto">
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">20</span></h4>
+              <p class="pregunta__texto-parrafo">
+                ¿Experimenta falta de amor propio y que sus acciones decepcionan a los demás?
+              </p>
+            </div>
+        </div>
+        <div class="tarjeta__img-box">
+          <img class ="tarjeta__img-box--img" src="{% static 'img/test.png'%}" alt="">
+        </div>
+    </div>
+    <div class="opciones">
+      <div  id="si" class="opcion opcion__si">SI</div>
+      <div  id="no" class="opcion opcion__no">NO</div>
+    </div>
+    <div class="carga-box">
+      <div id="barra-carga" class="carga__barra"></div>
+    </div>
+</div>
+
+    <div id="respuesta" class="respuesta">
+      <h2>Resultados</h2>
+      <div class="box-resultado">
+        <div class="veces">
+          <p>Usted Indicó <br><span id="cantidadVeces">0</span><br> veces sí</p>
+        </div>
+        <div class="texto-resp">
+          <p>Si ha respondido “sí” a más de cinco preguntas no hay duda de que tiene que consultar lo más pronto posible con profesionales de la salud mental. </p>
+        </div>
+      </div>
+      <div class="avalado">
+        Este test fue realizado por la Unidad de Salud EL TIEMPO con la asesoría de la Asociación Colombiana de Psiquiatría y no tiene valor diagnóstico. Solo es una guía para identificar tempranamente posibles trastornos que deben ser revisados por profesionales de la salud.
+      </div>
+    </div>
+{% endblock content %}
+  

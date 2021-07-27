@@ -1,4 +1,5 @@
 {% load static %}
+<!-- Seccion de html que sirve como base para todos los html donde se inserta todos los css y js usados -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,11 @@
     <link rel="Stylesheet" href="{% static 'css/estilos.css' %}">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
 	<link rel="Stylesheet" href="{% static 'css/enfermedades.css' %}">
-    <title>Maquetado</title>
-
+    <link rel="Stylesheet" href="{% static 'css/consejos.css' %}">
+    <link rel="Stylesheet" href="{% static 'css/formulario.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mapa.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estadisticas.css' %}">
+    <title>Salud Mental</title>
     <!--GLIDE.JS-->
     <script src="{% static 'js/glide.min.js' %}" charset="utf-8"></script>
     <link rel="stylesheet" href="{% static 'css/glide.core.min.css' %}">
@@ -18,11 +22,31 @@
     <!--GLIDER-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-	
+    <!--MAPA-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <!--ESTADISTICAS-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-	{% block content %}
-	{% endblock %}  
+    <!-- Incluye toda la seccion de codigo del navbar -->
+    {% include 'navbar.html' %}
+    <!-- Incluye toda la seccion de codigo del body de la homepage -->
+    {% block content %}
+        
+    {% endblock content %}
+    <!-- Incluye la seccion de codigo del footer-->
+
+    
     <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/estadisticas.js' %}"></script>  
+        
 </body>
 </html>

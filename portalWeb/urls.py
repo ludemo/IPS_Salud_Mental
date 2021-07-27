@@ -17,14 +17,24 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static 
+from homepage.views import HomeView
 
 from homepage import views
 
 urlpatterns = [
+    #url correspondiente a la seccion admin
     path('admin/', admin.site.urls),
-    path('', views.home, name = 'home'),
+    #url correspondiente a la pagina principal o homepage
+    path('', HomeView.as_view(), name = 'home'),
+    #incluye a todas las urls de la app formularios
     path('formulario/', include('formulario.urls')),
-    path('enfermedades/', include('enfermedades.urls'))
+    #incluye a todas las urls de la app enfermedades
+    path('enfermedades/', include('enfermedades.urls')),
+    #incluye a todas las urls de la app mapa
+    path('mapa/', include('mapa.urls')),
+    #incluye a todas las urls de la app estadisticas
+    path('estadisticas/', include('estadisticas.urls')),
+    path('login/', include('login.urls'))
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

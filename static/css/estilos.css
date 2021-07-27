@@ -5,6 +5,7 @@
 /*Inicio del bloque 1*/
 html{
     scroll-behavior: smooth;
+
 }
 body{
     overflow-x:hidden;
@@ -174,7 +175,7 @@ header li:nth-child(2),header li:nth-child(3){
     font-weight: 400;
     font-size: 1.1rem;
 }
-.bloque2 .boxVer{
+ .boxVer{
     display: flex;
     align-items: center;
     justify-content: center;
