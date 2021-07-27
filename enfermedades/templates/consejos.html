@@ -1,12 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consejos</title>
-</head>
-<body>
-    {% include 'navbar.html'%}
-</body>
-</html>
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    <!-- Seccion de html que incluye todo el codigo a la seccion de consejos -->
+</div>
+<div class="contenido">
+    <div class="title">
+        <img src="{% static 'img/iconoConsejos.png' %}" alt="">
+<h1>Algunos consejos</h1>
+</div>
+
+{% for consejo in object_list %}
+<div class="boxConsejo">
+    <div class="boxText">
+        <h2>{{consejo.conTit}}</h2>
+        <p> {{consejo.conDes}}</p>
+    </div>
+    <div class="boxImg">
+        <img src="{{consejo.conImaUrl}}" alt="">
+    </div>
+</div>   
+{% endfor %}
+{% endblock content %}
+    

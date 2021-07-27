@@ -7,6 +7,9 @@ new Glide(".images",{
 		1200:{
 			perView: 3
 		},
+		750:{
+			perView: 2
+		},
 		400:{
 			focusAt: 0,
 			perView: 1,
