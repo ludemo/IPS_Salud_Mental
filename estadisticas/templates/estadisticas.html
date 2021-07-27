@@ -26,10 +26,10 @@
 
     <div class="bloque2-estadísticas">
         <div class="bloque2-busquedas">
-            <select  class="bloque2-buscar" id="menu">
+            <select   id="menu">
                 <option value="1"> Ancash</option>
                 <option value="2"> Apurimac</option>
-                <option value="3"> Arequipa</option>
+                <option value="3" selected> Arequipa</option>
                 <option value="4"> Ayacucho</option>
                 <option value="5"> Cajamarca</option>
                 <option value="6"> Callao</option>
@@ -50,15 +50,26 @@
                 <option value="21"> Tacna</option>
                 <option value="22"> Ucayali</option>
                 <option value="23"> Pasco</option>
-                <option value="24" selected>Elige</option>
+                <option value="24" >Elige</option>
             </select>
-            <div class="bloque2-buscar">
-                <img src="{% static 'img/lupa.png' %}">
-                <input type="text" placeholder="Escribe tu distrito">
-            </div>
-            <select>
-                <option>Femenino</option>
-                <option>Masculino</option>
+            <select  id="etapa">
+                <option value="0" selected> < 1</option>
+                <option value="1"> 1 - 4</option>
+                <option value="2"> 5 - 9</option>
+                <option value="3"> 10 - 11</option>
+                <option value="4"> 12 - 14</option>
+                <option value="5"> 15 - 17</option>
+                <option value="6"> 18 - 24</option>
+                <option value="7"> 25 - 29</option>
+                <option value="8"> 30 - 39</option>
+                <option value="9"> 40 - 59</option>
+                <option value="10"> 60 - 79</option>
+                <option value="11"> 80 a más</option>
+            </select>
+            <select  id="genero">
+                <option value="0" selected >Masculino</option>
+                <option value="1">Femenino</option>
+                
             </select>
         </div>
 

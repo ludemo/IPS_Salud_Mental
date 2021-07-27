@@ -1,0 +1,12 @@
+[
+    {
+      "Sexo": "Masculino",
+      "Atendidos": 28571,
+      "Atenciones": 54337
+    },
+    {
+      "Sexo": "Femenino",
+      "Atendidos" :53225,
+      "Atenciones": 100966
+    }
+]

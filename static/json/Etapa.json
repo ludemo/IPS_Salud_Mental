@@ -1,0 +1,63 @@
+[
+    {
+      "Etapa": "< 1",
+      "Masculino": 133,
+      "Femenino":150 
+    },
+    {
+      "Etapa": "1 - 4",
+      "Masculino": 1314,
+      "Femenino":1011 
+    },
+    {
+      "Etapa": "5 - 9",
+      "Masculino": 2406,
+      "Femenino":2025 
+    },
+    {
+      "Etapa": "10 - 11",
+      "Masculino": 1410,
+      "Femenino":1270 
+    },
+    {
+      "Etapa": "12 - 14",
+      "Masculino": 2027,
+      "Femenino":2349 
+    },
+    {
+      "Etapa": "15 - 17",
+      "Masculino": 1790,
+      "Femenino":2699 
+    },
+    {
+      "Etapa": "18 - 24",
+      "Masculino":2272,
+      "Femenino":4212 
+    },
+    {
+      "Etapa": "25 - 29",
+      "Masculino":1221,
+      "Femenino":3379 
+    },
+    {
+      "Etapa": "30 - 39",
+      "Masculino":2452,
+      "Femenino":4863
+    },
+    {
+      "Etapa": "40 - 59",
+      "Cantidad": 8496,
+      "Masculino":3152,
+      "Femenino":5344
+    },
+    {
+      "Etapa": "60 - 79",
+      "Masculino":2102,
+      "Femenino":3099
+    },
+    {
+      "Etapa": "80  +",
+      "Masculino":630,
+      "Femenino":1001
+    }
+  ]
