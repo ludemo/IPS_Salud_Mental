@@ -38,7 +38,8 @@ centro_medico.addEventListener('input', function (event) {
         L.Routing.control({
             waypoints:   [
             // Se traza la ruta entre tu ubicacion y el centro de salud seleccionado
-            L.latLng(parseFloat(lat), parseFloat(long)),
+            //L.latLng(parseFloat(lat), parseFloat(long)),
+            L.latLng(parseFloat(-16.3988084), parseFloat(-71.5390943)),
             L.latLng(parseFloat(lat_centro_medico), parseFloat(long_centro_medico)),
             //L.latLng(-16.3989, -71.5369)
             ]
