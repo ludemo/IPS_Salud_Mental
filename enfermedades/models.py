@@ -7,12 +7,15 @@ class Enfermedad(models.Model):
 	nombreE = models.CharField(max_length=200)
 	imagenEF = models.ImageField(upload_to='img/enfermedades')
 	descripcionE = models.TextField()
-	estrategia = models.TextField()
+	sintoma1 = models.TextField(default=' ')
+	sintoma2 = models.TextField(default=' ')
+	sintoma3 = models.TextField(default=' ')
+	sintoma4 = models.TextField(default=' ')
 	imagenET = models.ImageField(upload_to='img/enfermedades')
+	imagenSIN = models.ImageField(upload_to='img/enfermedades/sintomas', default='img/enfermedades/cerebro_duDVBew.png')
 
 	class Meta:
 		verbose_name_plural = "Enfermedades"
-
 class PersonalM(models.Model):
 
 	nombreP = models.CharField(max_length=200)
