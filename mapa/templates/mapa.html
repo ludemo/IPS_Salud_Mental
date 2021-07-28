@@ -8,85 +8,62 @@
             <option class="comentarios__opcion" selected >Seleccione centro medico</option>
             <option class="comentarios__opcion" value="-16.4149,-71.532" >Hospital Honorio Delgado</option>
             <option class="comentarios__opcion" value="-16.4027688,-71.5274817">Hospital Goyeneche</option>
-	    <option class="comentarios__opcion" value="-16.4086679,-71.5383784">Clinica de Neuropsiquiatria y Salud Mental San Rafael</option>
-	    <option class="comentarios__opcion" value="-16.4166472,-71.5358055">Centro de Salud Mental Muñoz</option>
-	    <option class="comentarios__opcion" value="-16.4435595,-71.5579851">Centro de Salud Mental Comunitario Hunter</option>
-	    <option class="comentarios__opcion" value="-16.3926129,-71.5352505">El Instituto de Salud Mental Carlos Alberto Seguin Escobedo</option>
-	    <option class="comentarios__opcion" value="-16.3820256,-71.5591063">Centro de Adicciones Y Salud Mental</option>
-	    <option class="comentarios__opcion" value="-16.3776626,-71.5629145">Centro de salud mental comunitario San Martin de Porres Arequipa</option>
-	    <option class="comentarios__opcion" value="-16.4086483,-71.5376698">Clinica de Salud Mental y Adicciones</option>
-	    <option class="comentarios__opcion" value="-16.4021642,-71.5486799">Centro Psicologico Kid Zone</option>
-	    <option class="comentarios__opcion" value="-16.4436042,-71.5172623">Centro de Salud Mental y Adicciones Victor Raul Hinojosa</option>
-	    <option class="comentarios__opcion" value="-16.3392343,-71.5521913">Centro de Salud Mental Comunitario CAYMA</option>
-	    <option class="comentarios__opcion" value="-16.3920982,-71.5468937">Psicologos Bienestar - Sede Arequipa</option>
-	    <option class="comentarios__opcion" value="-16.4436432,-71.5172615">Centro de Salud Mental Comunitario Simon Bolivar</option>
-	    <option class="comentarios__opcion" value="-16.382622,-71.5582481">Moises Heresi</option>
-	    <option class="comentarios__opcion" value="-16.3847508,-71.5405765">Centro Psicologico de la Fuente</option>
-	    <option class="comentarios__opcion" value="-16.4016311,-71.5482927">Centro Psicologico</option>
-	    <option class="comentarios__opcion" value="-16.3999928,-71.5385741">Psicomedic-Tratamiento Psiquiatricos</option>
-	    <option class="comentarios__opcion" value="-16.407939,-71.5445547">CENTRO PSICOLOGICO - NEURO TALENTO</option>
+        <option class="comentarios__opcion" value="-16.4086679,-71.5383784">Clinica de Neuropsiquiatria y Salud Mental San Rafael</option>
+        <option class="comentarios__opcion" value="-16.4166472,-71.5358055">Centro de Salud Mental Muñoz</option>
+        <option class="comentarios__opcion" value="-16.4435595,-71.5579851">Centro de Salud Mental Comunitario Hunter</option>
+        <option class="comentarios__opcion" value="-16.3926129,-71.5352505">El Instituto de Salud Mental Carlos Alberto Seguin Escobedo</option>
+        <option class="comentarios__opcion" value="-16.3820256,-71.5591063">Centro de Adicciones Y Salud Mental</option>
+        <option class="comentarios__opcion" value="-16.3776626,-71.5629145">Centro de salud mental comunitario San Martin de Porres Arequipa</option>
+        <option class="comentarios__opcion" value="-16.4086483,-71.5376698">Clinica de Salud Mental y Adicciones</option>
+        <option class="comentarios__opcion" value="-16.4021642,-71.5486799">Centro Psicologico Kid Zone</option>
+        <option class="comentarios__opcion" value="-16.4436042,-71.5172623">Centro de Salud Mental y Adicciones Victor Raul Hinojosa</option>
+        <option class="comentarios__opcion" value="-16.3392343,-71.5521913">Centro de Salud Mental Comunitario CAYMA</option>
+        <option class="comentarios__opcion" value="-16.3920982,-71.5468937">Psicologos Bienestar - Sede Arequipa</option>
+        <option class="comentarios__opcion" value="-16.4436432,-71.5172615">Centro de Salud Mental Comunitario Simon Bolivar</option>
+        <option class="comentarios__opcion" value="-16.382622,-71.5582481">Moises Heresi</option>
+        <option class="comentarios__opcion" value="-16.3847508,-71.5405765">Centro Psicologico de la Fuente</option>
+        <option class="comentarios__opcion" value="-16.4016311,-71.5482927">Centro Psicologico</option>
+        <option class="comentarios__opcion" value="-16.3999928,-71.5385741">Psicomedic-Tratamiento Psiquiatricos</option>
+        <option class="comentarios__opcion" value="-16.407939,-71.5445547">CENTRO PSICOLOGICO - NEURO TALENTO</option>
             <!--Agregar mas centros medicos-->
         </select>
-        <div id="mapid"></div>
+        <div id="mapid" style="width: 900px; height: 700px;"></div>
         <script src="{% static 'js/mapa.js'%}"></script>
         </div>
     </section>
     <section class="comentarios">
+        <!--{% csrf_token %}-->
         <h2 class="comentarios__title">Dejanos tus comentarios</h2>
-        <input placeholder="Escribe tu comentario"class="comentarios_text-input" type="text"> 
+        <form action method="post" id="formComentario">
+            <div class="comentarios_text-input">
+                <input placeholder="Escribe tu comentario" type="text" name="{{form.comentario.name}}"> 
+            </div>
         <div class="comentarios__options-buton">
             <select class="comentarios__select" name="centro__medico" id="centro__medico">
-                <option class="comentarios__opcion" >Atención clínica 1</option>
-                <option class="comentarios__opcion" >Atención Clinica 2</option>
-                <option class="comentarios__opcion" >Atención Clinica 3</option>
+                <option value="">Seleccione un centro de atención</option>
+                {%for option in options %}
+                <div class="comentarios__opcion">    
+                <option value="{{ option.id }}" >{{ option.name }}/option>
+                {% endfor %}
             </select>
             <input class="comentarios__submit-input" type="submit">
         </div>
+        {% for instance in object_list %}
         <div class="comentario">
             <div class="comentario__box-foto">
-                <img class="comentario__img" src="{% static 'img/user.png' %}" alt="foto_usuario">
+                <img class="comentario__img" src="img/rostro.jpg" alt="foto_usuario">
             </div>
             <div class="comentario__box-comentario">
                 <div class="comentario__datos">
-                    <h4 class="comentario__nombre">Juan Quispe<span class="comentario__nombre--span"> Hospital caminos de los montes</span></h4>
+                    <h4 class="comentario__nombre">{{form.nombreUser}}</h4>
                 </div>
-                <div class="comentario__texto">
-                    Reribi muy buena atención departe del psicolog,muchas gracias.
-                </div>
+                <div class="comentario__texto">{{form.comentario}}</div>
             </div>
-        
         </div>
-        <div class="comentario">
-            <div class="comentario__box-foto">
-                <img class="comentario__img" src="{% static 'img/user.png' %}" alt="foto_usuario">
-            </div>
-            <div class="comentario__box-comentario">
-                <div class="comentario__datos">
-                    <h4 class="comentario__nombre">Juan Quispe<span class="comentario__nombre--span"> Hospital caminos de los montes</span></h4>
-                </div>
-                <div class="comentario__texto">
-                    Reribi muy buena atención departe del psicolog,muchas gracias.
-                </div>
-            </div>
-        
-        </div>
-        <div class="comentario">
-            <div class="comentario__box-foto">
-                <img class="comentario__img" src="{% static 'img/user.png' %}" alt="foto_usuario">
-            </div>
-            <div class="comentario__box-comentario">
-                <div class="comentario__datos">
-                    <h4 class="comentario__nombre">Juan Quispe<span class="comentario__nombre--span"> Hospital caminos de los montes</span></h4>
-                </div>
-                <div class="comentario__texto">
-                    Reribi muy buena atención departe del psicolog,muchas gracias.
-                </div>
-            </div>
-        
-        </div>
-        <div class="ver">
+        {%endfor%}        
+<!--        <div class="ver">
             <a class="ver__link" href="consejos.html">Mostrar más comentarios</a>
-        </div>
+        </div>-->
     </section>
 </div>
 <script src="js/script.js"></script>
