@@ -1,0 +1,52 @@
+[
+  {
+    "Enfermedad": "TRASTORNO DEL COMPORTAMIENTO (F90 - F91)",
+    "Atenciones": 4958,
+    "Atendidos": 10085
+  },
+  {
+    "Enfermedad": "TRASTORNO DEPRESIVO",
+    "Atenciones": 17865,
+    "Atendidos": 35430
+  },
+  {
+    "Enfermedad": "VIOLENCIA FAMILIAR/MALTRATO INFANTIL",
+    "Atenciones": 34178,
+    "Atendidos": 59297
+  },
+  {
+    "Enfermedad": "TRASTORNOS ALIMENTARIOS (F500 - F508 ANOREXIA, BULIMIA)",
+    "Atenciones": 226,
+    "Atendidos": 506
+  },
+  {
+    "Enfermedad": "ANSIEDAD",
+    "Atenciones": 20115,
+    "Atendidos": 39807
+  },
+  {
+    "Enfermedad": "INTENTO DE SUICIDIO",
+    "Atenciones": 341,
+    "Atendidos": 586
+  },
+  {
+    "Enfermedad": "SINDROME Y/O TRASTORNO PSICOTICO",
+    "Atenciones": 249,
+    "Atendidos": 594
+  },
+  {
+    "Enfermedad": "TRASTORNO CONSUMO DE ALCOHOL",
+    "Atenciones": 2775,
+    "Atendidos": 6254
+  },
+  {
+    "Enfermedad": "TRASTORNO CONSUMO DE OTRAS DROGAS",
+    "Atenciones": 1083,
+    "Atendidos": 2725
+  },
+  {
+    "Enfermedad": "VIOLENCIA ESCOLAR (Y062 - BULLYING)",
+    "Atenciones": 6,
+    "Atendidos": 19
+  }
+]

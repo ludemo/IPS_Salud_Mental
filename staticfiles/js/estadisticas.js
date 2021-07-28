@@ -2,11 +2,13 @@ google.charts.load('current', {packages: ['corechart', 'controls']});
 google.charts.setOnLoadCallback(drawChart1);
 google.charts.setOnLoadCallback(drawChart2);
 google.charts.setOnLoadCallback(drawChart3);
-var menu = document.getElementById('menu');
-var tipo;
-menu.addEventListener('change',drawChart1, false);
+google.charts.setOnLoadCallback(drawChart4);
+
+var departamento = document.getElementById('departamento');
+var departamentoNum;
+departamento.addEventListener('change',drawChart1, false);
 function drawChart1() {
-    tipo = document.getElementById('menu').value;
+    departamentoNum = document.getElementById('departamento').value;
     
     $.ajax({
         url: "/static/json/enf_regiones.json",
@@ -16,10 +18,9 @@ function drawChart1() {
             var dataArray = [
                 ['Enfermedades', 'Atendidos', 'Atenciones'],
             ];
-            for (var i = parseInt(tipo)*10-1; (parseInt(tipo)-1)*10-1 < i; i--) {
-                    var row = [jsonData[i].Enfermedad, parseInt(jsonData[i].Atendidos), parseInt(jsonData[i].Atenciones)];
-                    console.log(row);   
-                    console.log(i);               
+            for (var i = parseInt(departamentoNum)*10-1; (parseInt(departamentoNum)-1)*10-1 < i; i--) {
+                    var row = [jsonData[i].Enfermedad, parseInt(jsonData[i].Atendidos), parseInt(jsonData[i].Atenciones)];              
+                    document.getElementById('desGrafica').innerHTML = jsonData[i].Departamento;
                     dataArray.push(row);        
             }
             var options = {
@@ -41,9 +42,8 @@ function drawChart1() {
                 }
             };
             var data = google.visualization.arrayToDataTable(dataArray);
-            console.log(tipo);
             var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-                chart.draw(data, options);
+            chart.draw(data, options);
         }
     });
 }
@@ -59,11 +59,7 @@ function drawChart2() {
 
             var dataArray = [ 
                 ['Etapa', 'Masculino', 'Femenino '],
-            ];/*
-            for (var i = parseInt(numeroEtapa)*3-1; (parseInt(numeroEtapa)-1)*3-1 < i; i--) {
-                    var row = [jsonData[i].Etapa, parseInt(jsonData[i].Masculino), parseInt(jsonData[i].Femenino)];                  
-                    dataArray.push(row);        
-            }*/
+            ];
             var row = [jsonData[numeroEtapa].Etapa, parseInt(jsonData[numeroEtapa].Masculino), parseInt(jsonData[numeroEtapa].Femenino)];
             dataArray.push(row);
             var options = {
@@ -77,17 +73,16 @@ function drawChart2() {
             var data = google.visualization.arrayToDataTable(dataArray);
             console.log(etapa);
             var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-                chart.draw(data, options);
+            chart.draw(data, options);
+            document.getElementById('desGrafica').innerHTML = jsonData[numeroEtapa].Etapa;
         }
     });
 }
 var genero = document.getElementById('genero');
 var claseGenero;
 genero.addEventListener('change',drawChart3, false);
-
 function drawChart3() {
-    claseGenero = document.getElementById('genero').value;
-    console.log(claseGenero);
+    claseGenero = parseInt(document.getElementById('genero').value);
     $.ajax({
         url: "/static/json/Genero.json",
         dataType: "JSON",
@@ -96,15 +91,8 @@ function drawChart3() {
             var dataArray = [
                 ['Genero', 'Atendidos', 'Atenciones'],
             ];
-                if (claseGenero == 0) {
-                    var row = [jsonData[0].Sexo, parseInt(jsonData[0].Atendidos), parseInt(jsonData[0].Atenciones)];                  
-                    dataArray.push(row);  
-                }else if (claseGenero == 1) {
-                    var row = [jsonData[1].Sexo, parseInt(jsonData[1].Atendidos), parseInt(jsonData[1].Atenciones)];                  
-                    dataArray.push(row); 
-                }
-      
-            
+            var row = [jsonData[claseGenero].Sexo, parseInt(jsonData[claseGenero].Atendidos), parseInt(jsonData[0].Atenciones)];                  
+            dataArray.push(row); 
             var options = {
                 title: 'Casos de enfermedades mentales registrados por departamento',
                 'width':1000,
@@ -115,7 +103,46 @@ function drawChart3() {
             };
             var data = google.visualization.arrayToDataTable(dataArray);
             var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-                chart.draw(data, options);
+            chart.draw(data, options);
+            document.getElementById('desGrafica').innerHTML = jsonData[claseGenero].Sexo;
+        }
+    });
+}
+function drawChart4(enfermedad) {
+    console.log(enfermedad);
+    var enfermedadNum = parseInt(enfermedad)
+    $.ajax({
+        url: "/static/json/enfermedades.json",
+        dataType: "JSON",
+        success: function (jsonData) {
+
+            var dataArray = [
+                ['Enfermedad', 'Atendidos', 'Atenciones'],
+            ];
+            var row = [jsonData[enfermedadNum].Enfermedad, parseInt(jsonData[enfermedadNum].Atenciones), parseInt(jsonData[enfermedadNum].Atendidos)];
+            dataArray.push(row);
+            var options = {
+                title: 'Casos de enfermedades mentales registrados por departamento',
+                'width':1000,
+                'height':600,
+                aAxis : { 
+                    textStyle : {
+                        fontSize: 12
+                    }
+                },
+                vAxis : { 
+                    textStyle : {
+                        fontSize: 10
+                    }
+                },
+                series: {0: {"color": '#A2D9D8'},
+                            1: {"color": '#3BAFBF'},
+                }
+            };
+            var data = google.visualization.arrayToDataTable(dataArray);
+            var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+            document.getElementById('desGrafica').innerHTML = jsonData[enfermedadNum].Enfermedad;
         }
     });
 }
