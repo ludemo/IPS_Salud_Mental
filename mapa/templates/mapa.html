@@ -36,7 +36,7 @@
         <h2 class="comentarios__title">Dejanos tus comentarios</h2>
         <form method="post" id="formComentario">
             <div class="comentarios_text-input">
-                <input placeholder="Escribe tu comentario" type="text" name="{{form.comentario.name}}"> 
+                <input placeholder="Escribe tu comentario" style="border:none; background-color: transparent;" type="text" name="{{form.comentario}}"> 
             </div>
         <div class="comentarios__options-buton">
             <select class="comentarios__select" name="centro__medico" id="centro__medico">
@@ -61,9 +61,9 @@
             </div>
         </div>
         {%endfor%}        
-<!--        <div class="ver">
+        <div class="ver">
             <a class="ver__link" href="consejos.html">Mostrar más comentarios</a>
-        </div>-->
+        </div>
     </section>
 </div>
 <script src="js/script.js"></script>
