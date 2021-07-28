@@ -32,16 +32,16 @@
         </div>
     </section>
     <section class="comentarios">
-        <!--{% csrf_token %}-->
+        {% csrf_token %}
         <h2 class="comentarios__title">Dejanos tus comentarios</h2>
-        <form action method="post" id="formComentario">
+        <form method="post" id="formComentario">
             <div class="comentarios_text-input">
                 <input placeholder="Escribe tu comentario" type="text" name="{{form.comentario.name}}"> 
             </div>
         <div class="comentarios__options-buton">
             <select class="comentarios__select" name="centro__medico" id="centro__medico">
                 <option value="">Centro de atención</option>
-                {%for option in Comentarios %}
+                {%for option in centroAt %}
                 <div class="comentarios__opcion">    
                 <option value="{{ option.id }}">{{ option.name }}/option>
                 {% endfor %}
