@@ -15,23 +15,23 @@
 <section class="estadísticas-bloque2">
     <div class="bloque2-enfermedades">
         <h2>Enfermedades</h2>
-        <a class="bloque2-enfermedad">Depresión</a>
-        <a class="bloque2-enfermedad">Psicosis</a>
-        <a class="bloque2-enfermedad">Alcoholismo</a>
-        <a class="bloque2-enfermedad">Violencia familiar</a>
-        <a class="bloque2-enfermedad">Ansiedad</a>
-        <a class="bloque2-enfermedad">Transtornos alimentarios</a>
-        <a class="bloque2-enfermedad">Intento de suicidio</a>
-        <a class="bloque2-enfermedad">Consumo de drogas</a>
-        <a class="bloque2-enfermedad">Violencia escolar</a>
-        <a class="bloque2-enfermedad">Transtorno de comportamiento</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(1)">Depresión</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(6)">Psicosis</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(7)">Alcoholismo</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(2)">Violencia familiar</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(4)">Ansiedad</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(3)">Transtornos alimentarios</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(5)">Intento de suicidio</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(8)">Consumo de drogas</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(9)">Violencia escolar</a>
+        <a class="bloque2-enfermedad" onclick="drawChart4(0)">Transtorno de comportamiento</a>
         <a></a>
         <a></a>
     </div>
 
     <div class="bloque2-estadísticas">
         <div class="bloque2-busquedas">
-            <select   id="menu">
+            <select   id="departamento">
                 <option value="1"> Ancash</option>
                 <option value="2"> Apurimac</option>
                 <option value="3" selected> Arequipa</option>
@@ -88,7 +88,7 @@
             <h3 class="cifras">54</h3>
             <p class="texto">Total de casos</p>
         </div>
-        <h2>Arequipa</h2>
+        <h2 id="desGrafica">Arequipa</h2>
     </div>       
 </section>
 
