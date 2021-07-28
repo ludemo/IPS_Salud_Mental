@@ -1,5 +1,5 @@
 
-const navSlide = () =>{
+const   navSlide = () =>{
     const burger = document.querySelector('.burger-box');
     const nav = document.querySelector('.ul-navbar');
     const header = document.querySelector('header');
