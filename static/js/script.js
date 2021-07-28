@@ -1,3 +1,4 @@
+
 const navSlide = () =>{
     const burger = document.querySelector('.burger-box');
     const nav = document.querySelector('.ul-navbar');
@@ -17,10 +18,71 @@ const headerEfect = () =>{
     })
 }
 
-headerEfect();
-navSlide();
 //Formularios scripts
-formulario();
+try{
+    navSlide();
+    headerEfect();
+    formulario();
+}
+catch(error){
+    console.error(error);
+}
+try{
+    carrusel();
+
+}
+catch(error){
+    console.log(error);
+}
+
+function carrusel(){
+    var cantidad = 0;
+    var comentario = document.getElementsByClassName("comentario-carrusel__comentario");
+    var izquierda = document.getElementById("flecha-izquierda");
+    var derecha = document.getElementById("flecha-derecha");
+
+
+    izquierda.onclick = function(){anterior();}
+    derecha.onclick = function(){siguiente();}
+    demo();
+
+    async function demo(){
+        while(true){
+            await new Promise(r => setTimeout(r, 3000));
+            siguiente();
+        }
+    }
+    function siguiente(){
+        cantidad-=100;
+        for(let i = 0 ; i<comentario.length; i++){
+            comentario[i].style.transform="translateX("+cantidad+"%)";
+        }
+        if(cantidad<-400){
+            moverInicio();
+        }
+    }
+    function moverInicio(){
+        for(let i = 0 ; i<comentario.length; i++){
+            comentario[i].style.transform="translateX("+0+"%)";
+        }
+        cantidad = 0;
+    }
+    function moverFin(){
+        for(let i = 0 ; i<comentario.length; i++){
+            comentario[i].style.transform="translateX(-"+(comentario.length-1)*100+"%)";
+        }
+        cantidad = -400;
+    }
+    function anterior(){
+        cantidad+=100;
+        for(let i = 0 ; i<comentario.length; i++){
+            comentario[i].style.transform="translateX("+cantidad+"%)";
+        }
+        if(cantidad>0){
+            moverFin();
+        }
+    }
+}
 function formulario() {
 
     var SI = document.getElementById("si");
