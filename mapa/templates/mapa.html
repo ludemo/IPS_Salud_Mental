@@ -40,24 +40,24 @@
             </div>
         <div class="comentarios__options-buton">
             <select class="comentarios__select" name="centro__medico" id="centro__medico">
-                <option value="">Seleccione un centro de atención</option>
-                {%for option in options %}
+                <option value="">Centro de atención</option>
+                {%for option in Comentarios %}
                 <div class="comentarios__opcion">    
-                <option value="{{ option.id }}" >{{ option.name }}/option>
+                <option value="{{ option.id }}">{{ option.name }}/option>
                 {% endfor %}
             </select>
             <input class="comentarios__submit-input" type="submit">
         </div>
-        {% for instance in object_list %}
+        {% for instance in Comentarios %}
         <div class="comentario">
             <div class="comentario__box-foto">
-                <img class="comentario__img" src="img/rostro.jpg" alt="foto_usuario">
+                <img class="comentario__img" src="/static/img/user.png" alt="foto_usuario">
             </div>
             <div class="comentario__box-comentario">
                 <div class="comentario__datos">
-                    <h4 class="comentario__nombre">{{form.nombreUser}}</h4>
+                    <h4 class="comentario__nombre">{{instance.nombreUser}} -<span class="comentario__nombre--span"> {{instance.centroAt}}</span></h4>
                 </div>
-                <div class="comentario__texto">{{form.comentario}}</div>
+                <div class="comentario__texto">{{instance.comentario}}</div>
             </div>
         </div>
         {%endfor%}        
