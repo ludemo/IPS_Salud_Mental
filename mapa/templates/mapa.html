@@ -27,7 +27,7 @@
 	    <option class="comentarios__opcion" value="-16.407939,-71.5445547">CENTRO PSICOLOGICO - NEURO TALENTO</option>
             <!--Agregar mas centros medicos-->
         </select>
-        <div id="mapid" style="width: 900px; height: 700px;"></div>
+        <div id="mapid"></div>
         <script src="{% static 'js/mapa.js'%}"></script>
         </div>
     </section>
@@ -44,11 +44,11 @@
         </div>
         <div class="comentario">
             <div class="comentario__box-foto">
-                <img class="comentario__img" src="img/rostro.jpg" alt="foto_usuario">
+                <img class="comentario__img" src="{% static 'img/user.png' %}" alt="foto_usuario">
             </div>
             <div class="comentario__box-comentario">
                 <div class="comentario__datos">
-                    <h4 class="comentario__nombre">Juan Quispe</h4>
+                    <h4 class="comentario__nombre">Juan Quispe<span class="comentario__nombre--span"> Hospital caminos de los montes</span></h4>
                 </div>
                 <div class="comentario__texto">
                     Reribi muy buena atención departe del psicolog,muchas gracias.
@@ -58,11 +58,11 @@
         </div>
         <div class="comentario">
             <div class="comentario__box-foto">
-                <img class="comentario__img" src="img/rostro.jpg" alt="foto_usuario">
+                <img class="comentario__img" src="{% static 'img/user.png' %}" alt="foto_usuario">
             </div>
             <div class="comentario__box-comentario">
                 <div class="comentario__datos">
-                    <h4 class="comentario__nombre">Juan Quispe</h4>
+                    <h4 class="comentario__nombre">Juan Quispe<span class="comentario__nombre--span"> Hospital caminos de los montes</span></h4>
                 </div>
                 <div class="comentario__texto">
                     Reribi muy buena atención departe del psicolog,muchas gracias.
@@ -72,11 +72,11 @@
         </div>
         <div class="comentario">
             <div class="comentario__box-foto">
-                <img class="comentario__img" src="img/rostro.jpg" alt="foto_usuario">
+                <img class="comentario__img" src="{% static 'img/user.png' %}" alt="foto_usuario">
             </div>
             <div class="comentario__box-comentario">
                 <div class="comentario__datos">
-                    <h4 class="comentario__nombre">Juan Quispe</h4>
+                    <h4 class="comentario__nombre">Juan Quispe<span class="comentario__nombre--span"> Hospital caminos de los montes</span></h4>
                 </div>
                 <div class="comentario__texto">
                     Reribi muy buena atención departe del psicolog,muchas gracias.
