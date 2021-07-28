@@ -20,7 +20,7 @@
             </div>
             <div class="textConsejos">
                 <div class="boxTextConsejos">
-                    <h2 style="color: #ffffff;">Consejos para cuidar tu mente</h2>
+                    <h2>Consejos para cuidar tu mente</h2>
                     <p>Cada día puedes realizar actividades para mantener tu mente sana y evitar futuros problemas</p>
                     <div class="boxVer">
                         <img src="{% static 'img/ver.png' %}" alt="ver">
@@ -33,29 +33,17 @@
         </div>
     </section>
     <section class="bloque3">
-        <h2 class="titulo">Principales enfermedades</h2>
         <div class="contenedor-bloque3">
-
-            <div class="carousel">
-                <div class="carousel__contenedor">
-                    <button class="carousel__anterior">
-                        <img src="{% static 'img/flecha-izquierda.png' %}" class="chevron">
-                    </button>
-
-                    <div class="carousel__lista">
-                        {% for enfermedad in enfermedades %}
-                        <div class="carousel__elemento">
-                            <a href="{% url 'enfermedad' enfermedad.id %}"><img src="{{enfermedad.imagenET.url}}"></a>
-                        </div>
-                        {% endfor %}
+            <h2 class="titulo">Principales enfermedades</h2>
+            <div class="imagen-texto-contenedor">
+                <div class="texto-contenedor">
+                    <p>Entérate de cada una de las enfermedades mentales, obtén información detallada como su descripción y síntomas.</p>
+                    <div class="boxVer">
+                        <img src="{% static 'img/ver-celeste.png' %}" alt="ver">
+                        <a href="{% url 'enfermedad' 1 %}">mostrar</a>
                     </div>
-                    
-                    <button class="carousel__siguiente">
-                        <img src="{% static 'img/flecha-correcta.png' %}" class="chevron">
-                    </button>
                 </div>
-    
-                <div role="tablist" class="carousel__indicadores"></div>
+                <a href="{% url 'enfermedad' 1%}"><img src="{% static 'img/enfermedades.png' %}" class="imagen-enfermedades" alt="enfermedades"></a>
             </div>
 
         </div>
@@ -78,12 +66,82 @@
             {% endfor %}            
             </ul>
         </div>
-
         <div class="glide__arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
             <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
         </div>
     </div>
+    </section>
+    <section class="bloque5">
+        <h2 class="titulo">Ubica tu Centro de Salud más cercano</h2>
+        <div class="imagen-texto-contenedor">
+            <div class="texto-contenedor">
+                <p>Es importante que conozcas la ubicación de un centro de salud cercano para que puedas ser tratado.</p>
+                <div class="boxVer">
+                    <img src="{% static 'img/ver-celeste.png' %}" alt="ver">
+                    <a href="{% url 'mapa'%}">mostrar</a>
+                </div>
+            </div>
+            <a href="{% url 'mapa'%}" class="container-imagen"><img class="imagen-enfermedades" src="{% static 'img/centro.png' %}" alt="imagen-enfermedades"></a>
+        </div>
+    </section>
+    <section class="bloque6">
+        <h2 class="titulo">Gráficas y estadísticas</h2>
+        <div class="imagen-texto-contenedor">
+            <div class="texto-contenedor">
+                <p>Entérate de los datos estadísticos más recientes e interesantes de cada una de las enfermedades mentales.</p>
+                <div class="boxVer">
+                    <img src="{% static 'img/ver-celeste.png' %}" alt="ver">
+                    <a href="{% url 'estadisticas'%}">mostrar</a>
+                </div>
+            </div>
+            <a href="{% url 'estadisticas'%}" class="container-imagen"> <img src="{% static 'img/estadisticas.png' %}"  class="imagen-enfermedades" alt="imagen-estadisticas "></a>
+        </div>
+    </section>
+    <section class="bloque7">
+        <h2 class="titulo">Lo que dicen de nosotros</h2>
+        <div class="box-nosotros">
+            <img class ="flecha" id="flecha-izquierda" src="{% static 'img/flecha-izquierda.png' %}" alt="">
+            <div class="comentario-carrusel">
+                <div class="comentario-carrusel__comentario">
+                    <h4>María mercedesspan</h4>
+                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
+                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
+                        gracias"
+                    </p>
+                </div>
+                <div class="comentario-carrusel__comentario">
+                    <h4>Lupita</h4>
+                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
+                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
+                        gracias"
+                    </p>
+                </div>
+                <div class="comentario-carrusel__comentario">
+                    <h4>Cun</h4>
+                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
+                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
+                        gracias"
+                    </p>
+                </div>
+                <div class="comentario-carrusel__comentario">
+                    <h4>Otra personita</h4>
+                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
+                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
+                        gracias"
+                    </p>
+                </div>
+                <div class="comentario-carrusel__comentario">
+                    <h4>María mercedes</h4>
+                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
+                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
+                        gracias"
+                    </p>
+                </div>
+            </div>
+            <img class ="flecha" id="flecha-derecha" src="{%static 'img/flecha-correcta.png' %}" alt="">
+        </div>
+        <input placeholder="Escribe tu comentario"class="comentarios_text-input" type="text"> 
     </section>
     <script src="{% static 'js/script.js' %}"></script>
     <!--GLIDE-->

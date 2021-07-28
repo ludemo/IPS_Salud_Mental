@@ -10,6 +10,7 @@ html{
 body{
     overflow-x:hidden;
 }
+
 .bloque1 .contenedor{
     position: relative;
     width: 1440px;
@@ -169,18 +170,19 @@ header li:nth-child(2),header li:nth-child(3){
 .bloque2 h2{
     font-family: 'ABeeZee', sans-serif;
     font-size:2.5rem;
+    color: #fff;
 }
 .bloque2 p{
     font-family: 'Rosario', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
 }
- .boxVer{
+.boxVer{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.bloque2 .textConsejos a{
+.boxVer a{
     color:#fff;
     text-decoration: none;
     font-family: 'ABeeZee', sans-serif;
@@ -189,7 +191,7 @@ header li:nth-child(2),header li:nth-child(3){
     position: relative;
     padding:8px;
 }
-.bloque2 .textConsejos a::before{
+.boxVer a::before{
     position:absolute;
     width: 2px;
     height: 100%;
@@ -200,7 +202,7 @@ header li:nth-child(2),header li:nth-child(3){
     transition: all 0.3s;
     left: 0px;
 }
-.bloque2 .textConsejos a:hover:before
+.boxVer a:hover:before
 {
     width: 100%;
     opacity: 0.3;
@@ -210,106 +212,85 @@ header li:nth-child(2),header li:nth-child(3){
 }
 /*BLOQUE 3*/
 .bloque3{
-    margin: 0; 
+    margin:50px auto;
     padding: 0;
     box-sizing: border-box;
-    min-height: 80vh;
+    max-height: 900px;
     background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+    background-size: contain;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #3BAFBF;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .titulo {
     font-size: 40px;
     font-family: 'ABeeZee', sans-serif;
     margin-bottom: 40px;
+    margin: 35px 40px;
     color: #3BAFBF;
+    text-align: center;
 }
 .contenedor-bloque3 {
 	max-width: 1200px;
-	width: 90%;
 	margin: auto;
 }
+.imagen-texto-contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imagen-texto-contenedor a img{
+    width: 75%;
+}
+.imagen-texto-contenedor a{
+    margin:10px;
 
-/* --- --- CAROUSEL --- --- */
-.carousel__contenedor {
-	position: relative;
 }
-
-.chevron{
-	width: 20px;
+.texto-contenedor{
+    justify-content: center;
+    margin:0 10px;
+    width: 40%;
+    flex-grow:1;
 }
-
-.carousel__anterior,
-.carousel__siguiente {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	outline: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: #3BAFBF;;
-	opacity: 50%;	
+.texto-contenedor p{
+    text-align: center;
+    font-family: 'Rosario', sans-serif;
+    font-size: 30px;
 }
-
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-	opacity: 100%;
-	border: none;
+.bloque3 .boxVer a, .bloque5 .boxVer a, .bloque6 .boxVer a{
+    color:#3BAFBF;
 }
-.carousel__anterior {
-	left: -30px;
+.bloque3 .boxVer a::before, .bloque5 .boxVer a::before, .bloque6 .boxVer a::before{
+    background: #3BAFBF;
 }
-.carousel__siguiente {
-	right: -30px;
-}
-.carousel__lista {
-	overflow: hidden;
-}
-
-.carousel__indicadores .glider-dot {
-	display: block;
-	width: 10px;
-	height: 10px;
-	background: #3BAFBF;
-	border-radius: 100%;
-	border: none;
-}
-
-.carousel__indicadores .glider-dot:hover {
-	opacity: .5;
-}
-
-.carousel__indicadores .glider-dot.active {
-	opacity: 1;
-}
-
-@media screen and (max-width: 800px) {
-	.bloque3 {
-		padding: 40px 0;
-	}
-}
-
 /*BLOQUE 4*/
 .Bloque4{
-    margin: 0;
+    margin:50px auto;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    max-height: 900px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .barra h2{
     font-size: 40px;
     font-family: 'ABeeZee', sans-serif;
     margin-bottom: 40px;
     color: #3BAFBF;
+    text-align: center;
 }
 .glide__slide h3{
     font-family: 'Roboto Condensed', sans-serif;
@@ -381,7 +362,120 @@ header li:nth-child(2),header li:nth-child(3){
     width: 100%;
 }
 
+/*BLOQUE 5*/
+.bloque5, .bloque6,.bloque7{
+    color: #3BAFBF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
+    margin:50px auto;
+}
+.bloque5 .imagen-enfermedades ,.bloque6 .imagen-enfermedades{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.bloque5 .container-imagen ,.bloque6 .container-imagen{
+    display: flex;
+    justify-content: center;
+    margin:30px 0;
+}
+img{
+    user-select: none;
+}
+.bloque5 .imagen-texto-contenedor{
+    flex-direction: row-reverse;
+    
+}
+.bloque5 .imagen-texto-contenedor, .bloque6 .imagen-texto-contenedor{
+    margin: 0px 4%;
+    flex-wrap: wrap;
+}
+.bloque5 .texto-contenedor, .bloque6 .texto-contenedor{
+    margin: 0px 4%;
+    align-items: center;
+    justify-content: center;
+}
+/*Bloue 7*/
+.bloque7{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.bloque7 .comentario-carrusel__comentario{
+    background-color:#04bbd3;
+    outline : 5px solid #fff;
+    outline-offset:-15px ;
+    text-align: center;
+    position: relative;
+    padding:25px;
+    min-width: 100%;
+    box-sizing: border-box;
+    animation-name:carrusel;
+    animation-duration:7.5s;
+    animation-iteration-count:infinite;
+    transition: all .9s ease;
+}
+.bloque7 .comentario-carrusel__comentario img{
+    height: 40px;
+    user-select: none;
+}
+.bloque7 .comentario-carrusel__comentario p,.comentario-carrusel__comentario h4{
+    color: rgb(255, 255, 255);
+    font-family: 'Rosario', sans-serif;
+}
+.bloque7 .comentario-carrusel__comentario h4 {
+    font-size: 2rem;
+    margin:0;
+    margin-bottom: 10px;
+}
+.bloque7 .comentario-carrusel__comentario p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.bloque7 #flecha-izquierda{
+   left: 0;
+}
+.bloque7 #flecha-derecha{
+    right:0;
+}
+.bloque7 .flecha{
+    width: 40px;
+    height: 40px;
+    padding:5px;
+    user-select: none;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.37);
+    z-index: 999;
+}
+.bloque7 .flecha:hover{
+    background-color: #04bbd31c;
+}
+.bloque7 .box-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+    width: 80%;
+    flex-wrap: wrap;
+    position: relative;
+}
+.bloque7 .comentario-carrusel{
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    min-width: 160px;
+    flex-grow: 1;
+}
 /*Diseño responsive*/
 .burger{
     position: relative;
@@ -466,7 +560,11 @@ header li:nth-child(2),header li:nth-child(3){
         transform: translateX(0);
     }
 }
+
 @media screen and (max-width:650px){
+.Bloque4{
+        max-height: 100vh;
+}
 .bloque1{
     background-color: #3BAFBF ;
 }
