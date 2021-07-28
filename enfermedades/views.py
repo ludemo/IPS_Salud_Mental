@@ -9,7 +9,7 @@ from .models import Consejos, Enfermedad
 
 
 # Create your views here.
-#Views basadas en función para renderizar los transtornos de salud mental
+#Views basadas en función  para renderizar los transtornos de salud mental
 
 class ConsejoView(ListView):
     template_name = 'consejos.html'
