@@ -17,7 +17,7 @@
         </div>
     </div>
 </section>
-<section class="enfermedad">
+<!--<section class="enfermedad">
     <h2>{{ object.nombreE }}</h2>
     <div class="descripcion">
         <p> {{ object.descripcionE }} </p>
@@ -29,6 +29,32 @@
         <ul>
             {{ object.estrategia|linebreaksbr}}
         </ul>
+    </div>
+</section>-->
+
+<section class="enfermedad">
+    <h1>{{ object.nombreE }}</h1>
+    <h2>¿QUÉ ES?</h2>
+    <p>{{ object.descripcionE }}</p>
+    <h2>SÍNTOMAS</h2>
+    <div class="contenedor-burbujas">
+        <div class="burbujas">
+            <div class="burbuja">
+                <p>{{ object.sintoma1 }}</p>
+            </div>
+            <div class="burbuja">
+                <p>{{ object.sintoma2 }}</p>
+            </div>
+        </div>
+        <div class="burbujas2">
+            <div class="burbuja">
+                <p>{{ object.sintoma3 }}</p>
+            </div>
+            <div class="burbuja">
+                <p>{{ object.sintoma4 }}</p>
+            </div>
+        </div>
+        <img class="imagen-enfermedad" src="{{object.imagenSIN.url}}">
     </div>
 </section>
 <script src="{% static 'js/script.js' %}"></script>
