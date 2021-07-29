@@ -34,20 +34,26 @@
     <section class="comentarios">
         {% csrf_token %}
         <h2 class="comentarios__title">Dejanos tus comentarios</h2>
-        <form method="post" id="formComentario">
-            <div class="comentarios_text-input">
-                <input placeholder="Escribe tu comentario" style="border:none; background-color: transparent;" type="text" name="{{form.comentario}}"> 
+        {% if user.is_authenticated %}
+            <form method="post" id="formComentario">
+                <div class="comentarios_text-input">
+                    <input placeholder="Escribe tu comentario" style="border:none; background-color: transparent;" type="text" name="{{form.comentario}}"> 
+                </div>
+            <div class="comentarios__options-buton">
+                <select class="comentarios__select" name="centro__medico" id="centro__medico">
+                    <option value="">Centro de atención</option>
+                    {%for option in centroAt %}
+                    <div class="comentarios__opcion">    
+                    <option value="{{ option.id }}">{{ option.name }}/option>
+                    {% endfor %}
+                </select>
+                <input class="comentarios__submit-input" type="submit">
             </div>
-        <div class="comentarios__options-buton">
-            <select class="comentarios__select" name="centro__medico" id="centro__medico">
-                <option value="">Centro de atención</option>
-                {%for option in centroAt %}
-                <div class="comentarios__opcion">    
-                <option value="{{ option.id }}">{{ option.name }}/option>
-                {% endfor %}
-            </select>
-            <input class="comentarios__submit-input" type="submit">
-        </div>
+        {% else %}
+            <div class="navbar">
+                <h4 class="comentario__nombre" style="text-align: center;"> Para dejar su comentario tiene que iniciar sesión en nuestra página.</h4>
+            </div>
+        {% endif %} 
         {% for instance in Comentarios %}
         <div class="comentario">
             <div class="comentario__box-foto">
