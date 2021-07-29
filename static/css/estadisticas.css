@@ -74,12 +74,12 @@ a {
 .contenido-opcion {
     display: flex;
     align-items: center;
-    padding: 10px 18px;
+    padding: 5px 15px;
 }
 
 .titulo{
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.4rem;
     margin: 10px;
     text-align: left;
 }
@@ -124,7 +124,7 @@ a {
 /*Nombre del departamento*/
 .bloque2-estadísticas h2{
     font-family: 'ABeeZee', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin: 25px 0px;
 }
@@ -312,10 +312,16 @@ a {
     }
 }
 @media screen and (max-width: 440px){
-    .bloque1-contenedor-texto h1, .bloque2-estadísticas h2{
+    .bloque1-contenedor-texto h1{
         font-size: 40px;
+    }
+    .bloque2-estadísticas h2{
+        font-size: 30px;
     }
     .bloque1-contenedor-texto p{
         font-size: 25px;
+    }
+    .opciones .contenido-opcion h1{
+        padding: 9px 20px;
     }
 }
