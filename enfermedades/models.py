@@ -5,7 +5,7 @@ from django.db import models
 class Enfermedad(models.Model):
 
 	nombreE = models.CharField(max_length=200)
-	imagenEF = models.ImageField(upload_to='img/enfermedades')
+	#imagenEF = models.ImageField(upload_to='img/enfermedades')
 	descripcionE = models.TextField()
 	sintoma1 = models.TextField(default=' ')
 	sintoma2 = models.TextField(default=' ')
