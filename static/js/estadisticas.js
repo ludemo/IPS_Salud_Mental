@@ -1,3 +1,9 @@
+var altura = 600;
+const mediumBp = matchMedia('(max-width:770px)')
+if(mediumBp.matches){
+    console.log("Entro al media");
+	altura = 500;
+}
 google.charts.load('current', {packages: ['corechart', 'controls']});
 google.charts.setOnLoadCallback(drawChart1);
 google.charts.setOnLoadCallback(drawChart2);
@@ -25,8 +31,8 @@ function drawChart1() {
             }
             var options = {
                 title: 'Casos de enfermedades mentales registrados por departamento',
-                'width':1000,
-                'height':600,
+                'width':'100%',
+                'height': altura,
                 aAxis : { 
                     textStyle : {
                         fontSize: 12
@@ -64,8 +70,8 @@ function drawChart2() {
             dataArray.push(row);
             var options = {
                 title: 'Casos de enfermedades mentales registrados por departamento',
-                'width':1000,
-                'height':600,
+                'width':'100%',
+                'height': altura,
                 series: {0: {"color": '#A2D9D8'},
                             1: {"color": '#3BAFBF'},
                 }
@@ -95,8 +101,8 @@ function drawChart3() {
             dataArray.push(row); 
             var options = {
                 title: 'Casos de enfermedades mentales registrados por departamento',
-                'width':1000,
-                'height':600,
+                'width':'100%',
+                'height': altura,
                 series: {0: {"color": '#A2D9D8'},
                             1: {"color": '#3BAFBF'},
                 }
@@ -123,8 +129,8 @@ function drawChart4(enfermedad) {
             dataArray.push(row);
             var options = {
                 title: 'Casos de enfermedades mentales registrados por departamento',
-                'width':1000,
-                'height':600,
+                'width':'100%',
+                'height': altura,
                 aAxis : { 
                     textStyle : {
                         fontSize: 12
