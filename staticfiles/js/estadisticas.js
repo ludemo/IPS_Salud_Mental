@@ -1,3 +1,9 @@
+var altura = 600;
+const mediumBp = matchMedia('(max-width:770px)')
+if(mediumBp.matches){
+    console.log("Entro al media");
+	altura = 500;
+}
 google.charts.load('current', {packages: ['corechart', 'controls']});
 google.charts.setOnLoadCallback(drawChart1);
 google.charts.setOnLoadCallback(drawChart2);
@@ -24,9 +30,9 @@ function drawChart1() {
                     dataArray.push(row);        
             }
             var options = {
-                title: 'Casos de enfermedades mentales registrados por departamento',
-                'width':1000,
-                'height':600,
+                title: 'Atenciones y atendidos registrados por regiones',
+                'width':'100%',
+                'height': altura,
                 aAxis : { 
                     textStyle : {
                         fontSize: 12
@@ -63,9 +69,9 @@ function drawChart2() {
             var row = [jsonData[numeroEtapa].Etapa, parseInt(jsonData[numeroEtapa].Masculino), parseInt(jsonData[numeroEtapa].Femenino)];
             dataArray.push(row);
             var options = {
-                title: 'Casos de enfermedades mentales registrados por departamento',
-                'width':1000,
-                'height':600,
+                title: 'Casos de enfermedades mentales registrados por etapa',
+                'width':'100%',
+                'height': altura,
                 series: {0: {"color": '#A2D9D8'},
                             1: {"color": '#3BAFBF'},
                 }
@@ -94,9 +100,9 @@ function drawChart3() {
             var row = [jsonData[claseGenero].Sexo, parseInt(jsonData[claseGenero].Atendidos), parseInt(jsonData[0].Atenciones)];                  
             dataArray.push(row); 
             var options = {
-                title: 'Casos de enfermedades mentales registrados por departamento',
-                'width':1000,
-                'height':600,
+                title: 'Atenciones y atendidos registrados por genero',
+                'width':'100%',
+                'height': altura,
                 series: {0: {"color": '#A2D9D8'},
                             1: {"color": '#3BAFBF'},
                 }
@@ -122,9 +128,9 @@ function drawChart4(enfermedad) {
             var row = [jsonData[enfermedadNum].Enfermedad, parseInt(jsonData[enfermedadNum].Atenciones), parseInt(jsonData[enfermedadNum].Atendidos)];
             dataArray.push(row);
             var options = {
-                title: 'Casos de enfermedades mentales registrados por departamento',
-                'width':1000,
-                'height':600,
+                title: 'Atenciones y atendidos registrados por enfermedad mental',
+                'width':'100%',
+                'height': altura,
                 aAxis : { 
                     textStyle : {
                         fontSize: 12

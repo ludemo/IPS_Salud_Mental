@@ -21,7 +21,6 @@
     font-weight: 400;
     font-size: 2.5rem;
     text-align: center;
-    margin-top: 70px;
 }
 /*Seccion del mapa*/
 .mapa{
@@ -42,6 +41,11 @@
 }
 
 /*Estilos del comentario*/
+#mapid{
+    width: 90%;
+    height: 400px ;
+    margin:30px 0;
+}
 .comentario{
     display: flex;
     margin-top: 30px;
@@ -74,6 +78,9 @@
     display: flex;
     align-items: center;
     padding-left:10px;
+}
+.comentario__nombre--span{
+    color: #00000077;
 }
 .comentario__nombre{
     margin:0;
@@ -131,6 +138,7 @@
     font-family: var(--fontText);
     font-size: 1.1rem;
 }
+
 .comentarios_text-input::placeholder{
     color:var(--colorPrimario);
     padding: 10px;
@@ -145,9 +153,8 @@
     padding:10px;
     outline-color: var(--colorPrimario);
     box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.2);
-    width:250px ;
+    width:170px ;
     height: 40px;
-    margin-bottom: 20px;
 }
 
 .comentarios__select option{
