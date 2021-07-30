@@ -69,7 +69,7 @@ function drawChart2() {
             var row = [jsonData[numeroEtapa].Etapa, parseInt(jsonData[numeroEtapa].Masculino), parseInt(jsonData[numeroEtapa].Femenino)];
             dataArray.push(row);
             var options = {
-                title: 'Casos de enfermedades mentales registrados por etapa',
+                title: 'Casos de enfermedades mentales por género registrados por etapa',
                 'width':'100%',
                 'height': altura,
                 series: {0: {"color": '#A2D9D8'},
@@ -100,7 +100,7 @@ function drawChart3() {
             var row = [jsonData[claseGenero].Sexo, parseInt(jsonData[claseGenero].Atendidos), parseInt(jsonData[0].Atenciones)];                  
             dataArray.push(row); 
             var options = {
-                title: 'Atenciones y atendidos registrados por genero',
+                title: 'Atenciones y atendidos registrados por género',
                 'width':'100%',
                 'height': altura,
                 series: {0: {"color": '#A2D9D8'},
