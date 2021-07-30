@@ -13,25 +13,71 @@
 </section>
 
 <section class="estadísticas-bloque2">
-    <div class="bloque2-enfermedades">
-        <h2>Enfermedades</h2>
-        <a class="bloque2-enfermedad" onclick="drawChart4(1)">Depresión</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(6)">Psicosis</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(7)">Alcoholismo</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(2)">Violencia familiar</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(4)">Ansiedad</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(3)">Transtornos alimentarios</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(5)">Intento de suicidio</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(8)">Consumo de drogas</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(9)">Violencia escolar</a>
-        <a class="bloque2-enfermedad" onclick="drawChart4(0)">Transtorno de comportamiento</a>
-        <a></a>
-        <a></a>
+    <div class="selectbox">
+        <div class="select" id="select">
+            <div class="contenido-select">
+                <h1 class="titulo">Enfermedades</h1>
+            </div>
+            <i class="fas fa-angle-down flechita"></i>
+        </div>
+
+        <div class="opciones" id="opciones">
+            <a class="opcion" onclick="drawChart4(1)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Depresión</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(6)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Psicosis</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(7)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Alcoholismo</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(2)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Violencia familiar</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(4)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Ansiedad</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(3)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Trastornos alimentarios</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(5)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Intento de suicidio</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(8)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Consumo de drogas</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(9)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Violencia escolar</h1>
+                </div>
+            </a>
+            <a class="opcion" onclick="drawChart4(0)">
+                <div class="contenido-opcion">
+                    <h1 class="titulo">Trastorno de comportamiento</h1>
+                </div>
+            </a>
+        </div>
     </div>
 
     <div class="bloque2-estadísticas">
         <div class="bloque2-busquedas">
-            <select   id="departamento">
+            <select id="departamento">
                 <option value="1"> Ancash</option>
                 <option value="2"> Apurimac</option>
                 <option value="3" selected> Arequipa</option>
@@ -74,24 +120,17 @@
             <select  id="genero">
                 <option value="0" selected >Masculino</option>
                 <option value="1">Femenino</option>
-                
             </select>
         </div>
 
-        <!--<img class="gráfica" src="img/Gráfica.png">--> 
-        <div id="chart_div" ></div> 
-        <div class="bloque2-cifras">
-            <h3 class="cifras">25</h3>
-            <p class="texto">Casos graves</p>
-            <h3 class="cifras">11</h3>
-            <p class="texto">Casos recientes</p>
-            <h3 class="cifras">54</h3>
-            <p class="texto">Total de casos</p>
-        </div>
         <h2 id="desGrafica">Arequipa</h2>
+        <div class="grafico">
+            <div id="chart_div" ></div> 
+        </div>
     </div>       
 </section>
 
+<script src="{% static 'js/main.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
 {% endblock content %}
     
