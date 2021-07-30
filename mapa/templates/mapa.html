@@ -29,32 +29,37 @@
         </select>
         <div id="mapid" style="width: 900px; height: 700px;"></div>
         <script src="{% static 'js/mapa.js'%}"></script>
-        </div>
     </section>
     <section class="comentarios">
-        {% csrf_token %}
+        <!-- {% csrf_token %} -->
         <h2 class="comentarios__title">Dejanos tus comentarios</h2>
-        {% if user.is_authenticated %}
+        <h1>{{ user.username }}</h1>
+        {% if user.is_authenticated %} 
             <form method="post" id="formComentario">
                 <div class="comentarios_text-input">
-                    <input placeholder="Escribe tu comentario" style="border:none; background-color: transparent;" type="text" name="{{form.comentario}}"> 
+                {{ form.comentario }}
                 </div>
-            <div class="comentarios__options-buton">
-                <select class="comentarios__select" name="centro__medico" id="centro__medico">
-                    <option value="">Centro de atención</option>
-                    {%for option in centroAt %}
-                    <div class="comentarios__opcion">    
-                    <option value="{{ option.id }}">{{ option.name }}/option>
-                    {% endfor %}
-                </select>
-                <input class="comentarios__submit-input" type="submit">
-            </div>
-        {% else %}
+                <div class="comentarios__options-buton">
+                    {{ form.centroAt }}
+                <!-- <input class="comentarios__submit-input" type="submit"> -->
+                </div>
+               <!-- {{ form.nombreUser }} -->
+                <input type="text" name="nombreUser" value="{{ user.username }}" style="display:none" maxlength="100" required="" id="id_nombreUser">
+                
+            </form>
+                <div class="comentarios__options-buton">
+                   <button class="comentarios__submit-input" onclick="GuardarComentario()"> 
+                   Comentar 
+                   </button>
+                </div>
+           
+
+       {% else %}
             <div class="navbar">
                 <h4 class="comentario__nombre" style="text-align: center;"> Para dejar su comentario tiene que iniciar sesión en nuestra página.</h4>
             </div>
-        {% endif %} 
-        {% for instance in Comentarios %}
+       {% endif %} 
+        {% for instance in comentarios %}
         <div class="comentario">
             <div class="comentario__box-foto">
                 <img class="comentario__img" src="/static/img/user.png" alt="foto_usuario">
@@ -72,6 +77,7 @@
         </div>
     </section>
 </div>
-<script src="js/script.js"></script>
+<script src="{% static 'js/comentariosMap.js'%}"></script>
+
 {% endblock content %}
     
