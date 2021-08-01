@@ -19,9 +19,11 @@ class Enfermedad(models.Model):
 class PersonalM(models.Model):
 
 	nombreP = models.CharField(max_length=200)
+	especialidadP = models.CharField(max_length=100, default= ' ')
 	imagenP = models.ImageField(upload_to='img/doctores')
 	centroP = models.CharField(max_length=200)
 	celularP = models.IntegerField()
+	horarioP = models.CharField(max_length=100, default = ' ')
 
 	class Meta:
 		verbose_name_plural = "Personal Medico"
