@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Formulario
-from .form import Formulario 
+from .models import Pregunta
 
 # Create your views here.  
 #View basada en función para renderizar formulario html (Inactiva)
