@@ -1,7 +1,25 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Pregunta
+from .models import Preguntas
+from django.views.generic import TemplateView
 
 # Create your views here.  
+
+class FormularioView(TemplateView):
+	template_name = "formulario.html"
+    #enfermedades = Enfermedad.objects.all() 
+
+
+	def get_context_data(self, **kwargs):
+		context = super().get_context_data(**kwargs)
+		context["preguntas"] = Preguntas.objects.all()
+		return context
+
+
+
+
+
+
+
 #View basada en función para renderizar formulario html (Inactiva)
 def formulario(request, *args, **kwargs):
     return render(request, "formulario.html", {})
@@ -30,3 +48,5 @@ def enviar(request, pk):
 		resp_final = dict(form.fields["resp_final"].choices)[resp_final]
 		#form.save()
 		return redirect('../../../.../')
+
+
