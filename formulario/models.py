@@ -5,7 +5,7 @@ from django.core.validators import MinLengthValidator
 
 class Formulario(models.Model):
     ForCod = models.AutoField(primary_key=True)
-    pregunta = models.CharField(max_length=120, validators=[MinLengthValidator(15)])
+    pregunta = models.CharField(default= '',max_length=120, validators=[MinLengthValidator(15)])
 
 
 
