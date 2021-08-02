@@ -1,6 +1,7 @@
 {% extends 'index.html' %}
 {% load static %} 
 {% block content %} 
+{% load widget_tweaks %}
     <section class="bloque1">
         <div class="contenedor">
             <div class="contenedorText">
@@ -105,48 +106,34 @@
         <h2 class="titulo">Lo que dicen de nosotros</h2>
         <div class="box-nosotros">
             <img class ="flecha" id="flecha-izquierda" src="{% static 'img/flecha-izquierda.png' %}" alt="">
+            
             <div class="comentario-carrusel">
+                {% for instance in comentariosH %}
                 <div class="comentario-carrusel__comentario">
-                    <h4>María mercedesspan</h4>
+                    <h4>{{ instance.nombreUserH }}</h4>
                     <img src="{% static 'img/comillas.png' %}" alt="comillas">
-                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
-                        gracias"
+                    <p>"{{ instance.comentarioH }}"
                     </p>
                 </div>
-                <div class="comentario-carrusel__comentario">
-                    <h4>Lupita</h4>
-                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
-                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
-                        gracias"
-                    </p>
-                </div>
-                <div class="comentario-carrusel__comentario">
-                    <h4>Cun</h4>
-                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
-                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
-                        gracias"
-                    </p>
-                </div>
-                <div class="comentario-carrusel__comentario">
-                    <h4>Otra personita</h4>
-                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
-                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
-                        gracias"
-                    </p>
-                </div>
-                <div class="comentario-carrusel__comentario">
-                    <h4>María mercedes</h4>
-                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
-                    <p>"Realmente desconocía mucho sober los cuidados para tener una buena salud mentaly lo qque concierne. Muchas 
-                        gracias"
-                    </p>
-                </div>
+                {% endfor %}
+            
             </div>
             <img class ="flecha" id="flecha-derecha" src="{%static 'img/flecha-correcta.png' %}" alt="">
         </div>
-        <input placeholder="Escribe tu comentario"class="comentarios_text-input" type="text"> 
+        <form method="post" id="formComentarioH">
+            {{form.comentarioH|attr:"placeholder:Escribe tu comentario"|attr:"class:comentarios_text-input"}}
+            <input type="text" name="nombreUserH" value="{{ user.username }}" style="display:none" maxlength="200" required="" id="id_nombreUserH">     
+
+            <!--<input placeholder="Escribe tu comentario"class="comentarios_text-input" type="text"> -->
+            <div class="comentarios__options-buton">
+                    <button class="comentarios__submit-input" onclick="GuardarComentarioH()"> 
+                        Comentar 
+                    </button>
+            </div>
+        </form>
     </section>
     <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/comentariosH.js' %}"></script>
     <!--GLIDE-->
     <script src="{% static 'js/script2.js' %}"></script>
     <!--GLIDER-->
