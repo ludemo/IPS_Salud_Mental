@@ -28,7 +28,7 @@ class Comentarios(models.Model):
 
 	ComCod = models.AutoField(primary_key=True)
 	nombreUser = models.CharField(max_length=100)
-	comentario = models.CharField(max_length=200, validators=[MinLengthValidator(15)])
+	comentario = models.TextField(max_length=200, validators=[MinLengthValidator(15)])
 	centroAt = models.CharField(max_length=100, null=False, blank=False, choices=Centros)
 
 	class Meta:

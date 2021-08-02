@@ -1,16 +1,16 @@
 from django.db import models
-
+from django.core.validators import MinLengthValidator
 # Create your models here.
 
 class Enfermedad(models.Model):
 
-	nombreE = models.CharField(max_length=200)
+	nombreE = models.CharField(max_length=150)
 	#imagenEF = models.ImageField(upload_to='img/enfermedades')
 	descripcionE = models.TextField()
-	sintoma1 = models.TextField(default=' ')
-	sintoma2 = models.TextField(default=' ')
-	sintoma3 = models.TextField(default=' ')
-	sintoma4 = models.TextField(default=' ')
+	sintoma1 = models.TextField(max_length=150, validators=[MinLengthValidator(15)])
+	sintoma2 = models.TextField(max_length=150, validators=[MinLengthValidator(15)])
+	sintoma3 = models.TextField(max_length=150, validators=[MinLengthValidator(15)])
+	sintoma4 = models.TextField(max_length=150, validators=[MinLengthValidator(15)])
 	imagenET = models.ImageField(upload_to='img/enfermedades')
 	imagenSIN = models.ImageField(upload_to='img/enfermedades/sintomas', default='img/enfermedades/cerebro_duDVBew.png')
 
@@ -32,7 +32,7 @@ class Consejos(models.Model):
     #Titulo del consejo
     conTit = models.CharField(max_length=40)
     #Descripcion del consejo
-    conDes = models.TextField()
+    conDes = models.TextField(max_length=200, validators=[MinLengthValidator(15)])
     #Url de la imagen
     conImaUrl = models.TextField()
 
