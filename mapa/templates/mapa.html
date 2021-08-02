@@ -37,23 +37,19 @@
         {% if user.is_authenticated %} 
             <form method="post" id="formComentario">
                 <div class="comentarios_text-input">
-                {{ form.comentario }}
+                    {{ form.comentario }}
                 </div>
                 <div class="comentarios__options-buton">
                     {{ form.centroAt }}
                 <!-- <input class="comentarios__submit-input" type="submit"> -->
                 </div>
-               <!-- {{ form.nombreUser }} -->
-                <input type="text" name="nombreUser" value="{{ user.username }}" style="display:none" maxlength="100" required="" id="id_nombreUser">
-                
+                <input type="text" name="nombreUser" value="{{ user.username }}" style="display:none" maxlength="100" required="" id="id_nombreUser">     
             </form>
                 <div class="comentarios__options-buton">
-                   <button class="comentarios__submit-input" onclick="GuardarComentario()"> 
-                   Comentar 
-                   </button>
+                    <button class="comentarios__submit-input" onclick="GuardarComentario()"> 
+                        Comentar 
+                    </button>
                 </div>
-           
-
        {% else %}
             <div class="navbar">
                 <h4 class="comentario__nombre" style="text-align: center;"> Para dejar su comentario tiene que iniciar sesión en nuestra página.</h4>
