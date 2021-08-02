@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinLengthValidator
 
 # Create your models here.
 
@@ -22,11 +23,12 @@ Centros = (
 	('Psicomedic-Tratamiento Psiquiatricos', 'Psicomedic-Tratamiento Psiquiatricos'),
 	('Centro Psicologico - NEURO TALENTO', 'Centro Psicologico - NEURO TALENTO'),
 )
+
 class Comentarios(models.Model):
 
 	ComCod = models.AutoField(primary_key=True)
 	nombreUser = models.CharField(max_length=100)
-	comentario = models.CharField(max_length=300)
+	comentario = models.CharField(max_length=200, validators=[MinLengthValidator(15)])
 	centroAt = models.CharField(max_length=100, null=False, blank=False, choices=Centros)
 
 	class Meta:
