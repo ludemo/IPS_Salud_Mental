@@ -6,10 +6,10 @@
     <h1>¿Cómo esta tu salud mental?</h1>
     <p>Con estas preguntas usted podrá identificar señales tempranas y solicitar ayuda profesional.</p>
     <div class="tarjeta">
-      {% for instance in comentarios %}
+      {% for instance in Preguntas %}
         <div class="pregunta">
             <div  class="pregunta__texto">
-              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">instance </span></h4>
+              <h4 class="pregunta__texto-title">Pregunta <span class="pregunta-texo__title--span">1 </span></h4>
               <p class="pregunta__texto-parrafo">
                 {{instance.pregunta}}
               </p>
