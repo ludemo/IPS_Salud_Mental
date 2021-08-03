@@ -33,12 +33,11 @@
     <section class="comentarios">
         <!-- {% csrf_token %} -->
         <h2 class="comentarios__title">Dejanos tus comentarios</h2>
-        <h1>{{ user.username }}</h1>
-        {% if user.is_authenticated %} 
+            {% if user.is_authenticated %} 
             <form method="post" id="formComentario">
-                <div class="comentarios_text-input">
+                
                     {{ form.comentario }}
-                </div>
+                
                 <div class="comentarios__options-buton">
                     {{ form.centroAt }}
                 <!-- <input class="comentarios__submit-input" type="submit"> -->

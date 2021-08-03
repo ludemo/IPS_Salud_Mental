@@ -1,3 +1,4 @@
+from homepage.forms import ComentarioHForm
 from homepage.models import ComentariosHome
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -13,7 +14,8 @@ class HomeView(CreateView):
     #context_object_name = 'enfermedades'
     model = ComentariosHome
     success_url = '.'
-    fields=('__all__')
+    form_class = ComentarioHForm
+    
     #enfermedades = Enfermedad.objects.all() 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

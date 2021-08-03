@@ -34,7 +34,7 @@ function GuardarComentario(){
             array_com = data.posts;
             console.log(array_com);
             // crear un div y meter todo
-            
+            location.reload();
 
         }
     )
