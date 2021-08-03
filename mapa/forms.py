@@ -37,7 +37,8 @@ class ComentarioForm(ModelForm):
                 attrs={
                     'placeholder':'Escribe tu comentario',
                     'style':'border:none; background-color: transparent;',
-                    'autocomplete':'off'
+                    'autocomplete':'off',
+                    "class":"comentarios_text-input"
                 }
             ),
 

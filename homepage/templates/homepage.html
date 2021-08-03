@@ -111,7 +111,7 @@
                 {% for instance in comentariosH %}
                 <div class="comentario-carrusel__comentario">
                     <h4>{{ instance.nombreUserH }}</h4>
-                    <img src="{% static 'img/comillas.png' %}" alt="comillas">
+                    <img src="{% static 'img/comillas.png' %}" alt="comillas" >
                     <p>"{{ instance.comentarioH }}"
                     </p>
                 </div>
@@ -120,17 +120,22 @@
             </div>
             <img class ="flecha" id="flecha-derecha" src="{%static 'img/flecha-correcta.png' %}" alt="">
         </div>
-        <form method="post" id="formComentarioH">
-            {{form.comentarioH|attr:"placeholder:Escribe tu comentario"|attr:"class:comentarios_text-input"}}
+        {% if user.is_authenticated %}
+        <form  method="post" id="formComentarioH">
+            
+                    {{ form.comentarioH }}
+           
             <input type="text" name="nombreUserH" value="{{ user.username }}" style="display:none" maxlength="200" required="" id="id_nombreUserH">     
 
             <!--<input placeholder="Escribe tu comentario"class="comentarios_text-input" type="text"> -->
-            <div class="comentarios__options-buton">
+            
+        </form>
+        <div class="comentarios__options-buton">
                     <button class="comentarios__submit-input" onclick="GuardarComentarioH()"> 
                         Comentar 
                     </button>
             </div>
-        </form>
+        {% endif %}
     </section>
     <script src="{% static 'js/script.js' %}"></script>
     <script src="{% static 'js/comentariosH.js' %}"></script>

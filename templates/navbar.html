@@ -1,17 +1,21 @@
 
 <!-- Seccion de html que incluye todo el codigo referente al navBar -->
 {% block content %}
-    <div class="boxHeader">
+     <div class="boxHeader">
         <header>
         <div class="navbar">
             <ul class="ul-navbar">
                 <li><a href="{% url 'home' %}">Inicio</a></li>
                 <li><a href="{% url 'enfermedad' pk=1 %}">Enfermedades</a></li>
-                <li><a href="{% url 'home' %}#contacto">Contacto Profesional</a></li>
+                <li><a href="{% url 'formulario'%}">Llena nuestro test</a></li>
             </ul>
         </div>
         <div class="test">
-            <a href="{% url 'formulario'%}">Llena nuestro test</a>
+            {% if user.is_authenticated %} 
+            <a href="{% url 'logout'%}">Cerrar sesión</a>
+            {% else %}
+            <a href="{% url 'login'%}">Iniciar</a><a href="{% url 'register'%}">/Registrar</a>
+            {% endif %}
         </div>
         <div class="burger">
             <div class="burger-box">
@@ -21,5 +25,5 @@
             </div>
         </div>
         </header>
-    </div> 
+    </div>
 {% endblock %}    
